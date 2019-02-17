@@ -1,11 +1,11 @@
 {
-  "main.js": "/react-gh-pages/static/js/main.0167e1c7.chunk.js",
-  "main.js.map": "/react-gh-pages/static/js/main.0167e1c7.chunk.js.map",
-  "runtime~main.js": "/react-gh-pages/static/js/runtime~main.cde22863.js",
-  "runtime~main.js.map": "/react-gh-pages/static/js/runtime~main.cde22863.js.map",
-  "static/js/2.187474ec.chunk.js": "/react-gh-pages/static/js/2.187474ec.chunk.js",
-  "static/js/2.187474ec.chunk.js.map": "/react-gh-pages/static/js/2.187474ec.chunk.js.map",
-  "index.html": "/react-gh-pages/index.html",
-  "precache-manifest.b5003b2f0b839fedd176d04370812b29.js": "/react-gh-pages/precache-manifest.b5003b2f0b839fedd176d04370812b29.js",
-  "service-worker.js": "/react-gh-pages/service-worker.js"
+  "main.js": "/static/js/main.af1343cb.chunk.js",
+  "main.js.map": "/static/js/main.af1343cb.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.fdfcfda2.js",
+  "runtime~main.js.map": "/static/js/runtime~main.fdfcfda2.js.map",
+  "static/js/2.b910c2ef.chunk.js": "/static/js/2.b910c2ef.chunk.js",
+  "static/js/2.b910c2ef.chunk.js.map": "/static/js/2.b910c2ef.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.fdfda8abba9b0ddd1953c578a804d5e7.js": "/precache-manifest.fdfda8abba9b0ddd1953c578a804d5e7.js",
+  "service-worker.js": "/service-worker.js"
 }
