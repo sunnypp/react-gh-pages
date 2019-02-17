@@ -2,7 +2,7 @@
   "name": "react-gh-pages",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sunnypp.github.io/react-gh-pages",
+  "homepage": "http://sunnypp.github.io/",
   "dependencies": {
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
