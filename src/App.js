@@ -17,7 +17,7 @@ const Heading = styled(BaseHeading)`
   margin-bottom: 6px;
 `
 
-const Text = styled(props => <BaseText className={props.className} fontSize={[2,3,4]}>{props.children}</BaseText>)`
+const Text = styled(props => <BaseText className={props.className} fontSize={[2,3,4]} {...props}>{props.children}</BaseText>)`
   font-family: 'Crimson Text', Georgia, Times, serif;
   display: ${ props => props.display || 'block' };
   margin-bottom: 6px;
