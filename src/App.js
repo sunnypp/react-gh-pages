@@ -6,6 +6,7 @@ import {
   Flex,
   Image,
   Heading as BaseHeading,
+  Link,
   Text as BaseText
 } from 'rebass';
 
@@ -38,6 +39,10 @@ const GlobalStyle = createGlobalStyle`
   * { box-sizing: border-box; }
 `;
 
+const Ul = styled.ul`
+  margin: 0;
+`;
+
 
 const App = props => {
   return (
@@ -46,6 +51,13 @@ const App = props => {
       <Flex m={[3,4,5]} flexDirection='column' alignItems='center'>
         <Heading m='auto' as='h1' fontSize={[3,4,5]}>About Sunny Pun</Heading>
         <Text>Hello world!  I am a Full-stack JavaScript developer who first touched HTML 16 years ago!</Text>
+        <Text>I would say myself extraordinary as I:
+          <Ul>
+            <li>speak English better than Cantonese (though I am born and raised in Hong Kong and have never left Hong Kong for more than 3 months),</li>
+            <li>want to work for helping others -- Yup I care about what I am building</li>
+            <li>enjoy playing and reading about programming.  I play <Link href='https://codegolf.stackexchange.com/a/97921/59806'>Code Golf</Link>.</li>
+          </Ul>
+        </Text>
       </Flex>
       <Box bg='black' color='rgb(230,230,230)'>
         <Box m='auto' p={[3,4,5]} maxWidth={1024}>
