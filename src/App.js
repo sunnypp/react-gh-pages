@@ -6,7 +6,7 @@ import {
   Flex,
   Image,
   Heading as BaseHeading,
-  Link,
+  Link as BaseLink,
   Text as BaseText
 } from 'rebass';
 
@@ -23,6 +23,8 @@ const Text = styled(props => <BaseText className={props.className} fontSize={[2,
   display: ${ props => props.display || 'block' };
   margin-bottom: 6px;
 `
+
+const Link = styled(props => <BaseLink className={props.className} target="_blank" {...props}>{props.children}</BaseLink>)``;
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -86,69 +88,110 @@ const App = props => {
         </>
       )
     },
-    // {
-    //   year: ,
-    //   impressum: (
+    {
+      year: 2004,
+      impressum: (
+        <Text>I got a teacher online for Flash Games Development!  And I put more time on Maths and Music.</Text>
+      ),
+      description: (
+        <>
+          <Text>LF2 is not the only game that I played.  I enjoyed playing little games online (be it Flash based or java applet).  One of them is <Link href='https://web.archive.org/web/20171114011538/http://ugameasia.com:80/#'>UgameAsia</Link>.  They were hiring game developers and out of nowhere I contacted “someone” there and he became my teacher for Flash.</Text>
+
+          <Text>This is also a year which I got First Place in Maths Olympiad (22 questions out of 25 with other students getting the same score), the winner of Speech Festival for Prose Speech (and my mother still hangs that “flag” in our sitting room), and joined the Recorder Team of my primary school.  I am glad that I have teachers who are willing to spend the extra time to form a music composition class.</Text>
+
+        </>
+      )
+    },
+    {
+      year: 2005,
+      impressum: (
+        <Text>Primary 6.  Less time for computers but still learning.  Click to see more.</Text>
+      ),
+      description: (
+        <>
+        <Text>This year I was more academic-focused, although I still enjoyed pressing Ctrl+Alt+Del to kill the screen monitoring process to gain myself some freedom during Computer classes.</Text>
+
+        <Text>I didn’t completely “stop” about programming.  Like I’ve spent time investigating how others implemented some complicated game flows within the “framework” of LF2, like “press Attack to continue”, otherwise there will be a road block.  (It was implemented by having a hit detector that covers the whole area)  Or like “extra armor”, by creating another hit detector that covers the character’s body.</Text>
+
+        <Text>And I learnt about onhittest which returns true when the 2 rectangles overlap (or a point overlaps with a vector shape).  This is the most important event to care about (along with onenterframe which is “for every frame”).</Text>
+        </>
+      )
+    },
+    {
+      year: 2006,
+      impressum: (
+        <Text>Finally I moved from (completely) event handlers to variables in Flash.  A short story about writing websites when expanded!</Text>
+      ),
+      description: (
+        <>
+        <Text>My first year in secondary school which I’ve spent time making new friends and joining clubs.  Nonetheless, I have taken a class organized by the Computer Club about HTML and JavaScript, which they don’t have enough time to cover cookies (which they promised!) and I showed my enthusiasm.  One of the seniors said he wants me to join them and help the school maintain the website, which I refused as I “don’t wanna pay membership fee”.  The senior laughed and said he should have paid me instead for helping him out.  I don’t exactly remember what happened next -- maybe their workload is not that big to ask for help from the juniors!</Text>
+
+        <Text>And finally I learnt the concept of variables in Flash.  All of the games I made before was purely depending on which frame (game state) the game is at and event handlers.  Finally at this age of 13 I have two way bindings!</Text>
+        </>
+      )
+    },
+    {
+      year: 2007,
+      impressum: (
+        <Text>I made 2 games that includes a timer and we drag a sprite to avoid damage till the boss is defeated (by the timer, lol).  That’s called ICQ vs My Computer (I & II).  You may want to find the links of SWFs...</Text>
+      ),
+      description: (
+        <>
+        <Text>I started playing Duel Masters.  And Age Of Empires (the Conqueror, so we abbreviated that as AOC) at this age.  I made Scenarios!  Feeling good to design games without caring about the graphics haha!</Text>
+
+        <Text>I made 2 games that includes a timer and we drag a sprite to avoid damage till the boss is defeated (by the timer, lol).  That’s called ICQ vs My Computer (I & II).</Text>
+
+        <Text>A revamped version of my website but in the “Game zone” there are still links to the swfs <Link href='https://web.archive.org/web/20091027003244/http://hk.geocities.com/power_place2004/'>here</Link>!</Text>
+        </>
+      )
+    },
+    {
+      year: 2008,
+      impressum: (
+        <Text>I started Calculator Programming and selling Flash games for smart phones!</Text>
+      ),
+      description: (
+        <>
+        <Text>I am the last batch of 3-year cohort for University.  So I had 2 public exams before I started my studies in University.  In those public exams, we can use calculators.</Text>
+
+        <Text>And I started calculator programming!  With limited memory for the calculator, I trained my mindset about Code Golf.  I have made games on calculator like “Guess the number”, “Number battle”.</Text>
+
+        <Text>I have also sold Flash based games (for $5) by sending swf files via Bluetooth.  That game is called “Fifteen Twenty”.</Text>
+        </>
+      )
+    },
+    {
+      year: 2009,
+      impressum: (
+        <Text>I can only choose one: Computer & Information Technology or Biology.  I chose CIT.  A short story about doing programing in with Karaoke computers!</Text>
+      ),
+      description: (
+        <>
+        <Text>Friends were going to tutors and got some “secret formulas”.  I started to appreciate program written by others.  For example, for quadratic formulas it seems the optimized version should be “pulling out delta (D)” and return the results as “.5a^-1 * (-b+D” and “-5a^-1 * (-b-D”.  However, by mathematics we have sum of roots as -b/a.</Text>
+
+          <Text>I’ve found others using SD (Statistics Data) mode for saving more variables (By saving as number of entries n and mean of entries).  Then I used complex number to save twice as much (by using the real and imaginary parts), which inspired my polynomial expander.  (Let the user input a polynomial like (X^2+3X+2)(X-5) and then the program returns coefficients of constant, X, X^2, etc..)</Text>
+
+          <Text>Form 4 is the year that I have to decide to let go of Biology in order to pursue my studies in Computer (Named as Computer & Information Technology, abbreviated CIT).</Text>
+
+          <Text>When I sang karaoke, I even sat in front of the computer and opened a notepad.  I used window.moveTo to create a browser earthquake.  It was fun and (some of) my friends marvelled at what I created with just notepad and keyboard.</Text>
+          </>
+      )
+    },
+    {
+      year: 2010,
+      impressum: (
+        <Text>Made a website for School Based Assessmemnt (with a Flash game inside of course!).  Made a game that makes myself proud.  (EXE download link <Link href='https://web.archive.org/web/20091027093037fw_/http://hk.geocities.com/power_place2004/robot.zip'>here</Link>)</Text>
+      ),
+      description: (
+        <>
+        <Text>For CIT, I had to do School Based Assessment (SBA).  My topic is E-class / E-learning Feasibility Study.  Mostly I spent my time preparing for HKCEE (my first public exam, The Hong Kong Certificate of Education Examination).  Of course, I included a Flash game for testing fractions knowledge in the website.</Text>
+
+        <Text>After that, I made the first Flash game that really made myself proud.  That is named “Mistakenly Getting into the Robot Kingdom” (if translated to English).  That’s an “attack” avoidance game and the attack from the sky will kill surrounding enemies when exploded. (Link <Link href='https://web.archive.org/web/20091027093037fw_/http://hk.geocities.com/power_place2004/robot.zip'>here</Link>)</Text>
         
-    //   ),
-    //   description: (
-        
-    //   )
-    // },
-    // {
-    //   year: ,
-    //   impressum: (
-        
-    //   ),
-    //   description: (
-        
-    //   )
-    // },
-    // {
-    //   year: ,
-    //   impressum: (
-        
-    //   ),
-    //   description: (
-        
-    //   )
-    // },
-    // {
-    //   year: ,
-    //   impressum: (
-        
-    //   ),
-    //   description: (
-        
-    //   )
-    // },
-    // {
-    //   year: ,
-    //   impressum: (
-        
-    //   ),
-    //   description: (
-        
-    //   )
-    // },
-    // {
-    //   year: ,
-    //   impressum: (
-        
-    //   ),
-    //   description: (
-        
-    //   )
-    // },
-    // {
-    //   year: ,
-    //   impressum: (
-        
-    //   ),
-    //   description: (
-        
-    //   )
-    // },
+        <Text>Some friends found me for creating games with RPGmaker!  It was fun.</Text>
+        </>
+      )
+    },
     // {
     //   year: ,
     //   impressum: (
@@ -275,67 +318,25 @@ const App = props => {
       )
     } ) }
     { // <Text>
-
-
-      // Year 2003
-
-      // My mum helped me to get Macromedia Flash (is that Flash MX?) books from the Adult Library (now Flash belongs to Adobe).  I created little Flash games that:
-      // Shows our main character.  Listens to keydown events and shows off different super moves (a-z, 0-9, 36 moves!).
-      // “Avoid the borders”.  Whenever mouseover the drawn path, the “Game over” animation is played.
-
-      // And I was very interested about LF2 mods.  Learnt about LF2 mods with my friends -- of course about how to make our own character “the one” (that won’t die at all).  Even if you have (close to) infinite damage, your attack may be reflected.  Instead of adding cool new moves, I’ve found that removing the “body” (hit detection area) results in true invincibility and also less file size.
-
       // Year 2004
 
-      // LF2 is not the only game that I played.  I enjoyed playing little games online (be it flash based or java applet).  One of them is UgameAsia (https://web.archive.org/web/20171114011538/http://ugameasia.com:80/#).  They were hiring game developers and out of nowhere I contacted “someone” there and he became my teacher for Flash.
-
-      // This is also a year which I got First Place in Maths Olympiad (22 questions out of 25 with other students getting the same score), the winner of Speech Festival for Prose Speech (and my mother still hangs that “flag” in our sitting room), and joined the Recorder Team of my primary school.  I am glad that I have teachers who are willing to spend the extra time to form a music composition class.
 
       // Year 2005
 
-      // This year I was more academic-focused, although I still enjoyed pressing Ctrl+Alt+Del to kill the screen monitoring process to gain myself some freedom during Computer classes.
-
-      // I didn’t completely “stop” about programming.  Like I’ve spent time investigating how others implemented some complicated game flows within the “framework” of LF2, like “press Attack to continue”, otherwise there will be a road block.  (It was implemented by having a hit detector that covers the whole area)  Or like “extra armor”, by creating another hit detector that covers the character’s body.
-
-      // And I learnt about onhittest which returns true when the 2 rectangles overlap (or a point overlaps with a vector shape).  This is the most important event to care about (along with onenterframe which is “for every frame”).
 
       // Year 2006
 
-      // My first year in secondary school which I’ve spent time making new friends and joining clubs.  Nonetheless, I have taken a class organized by the Computer Club about HTML and JavaScript, which they don’t have enough time to cover cookies (which they promised!) and I showed my enthusiasm.  One of the seniors said he wants me to join them and help the school maintain the website, which I refused as I “don’t wanna pay membership fee”.  The senior laughed and said he should have paid me instead for helping him out.  I don’t exactly remember what happened next -- maybe their workload is not that big to ask for help from the juniors!
-
-      // And finally I learnt the concept of variables in Flash.  All of the games I made before was purely depending on which frame (game state) the game is at and event handlers.  Finally at this age of 13 I have two way bindings!
 
       // Year 2007
 
-      // I started playing Duel Masters.  Did I start playing Age Of Empires (the Conqueror, so we abbreviated that as AOC) at this age?  I made 2 games that includes a timer and we drag a sprite to avoid damage till the boss is defeated (by the timer, lol).  That’s called ICQ vs My Computer (I & II).
-
-      // A revamped version of my website but in the “Game zone” there are still links to the swfs!
-      // https://web.archive.org/web/20091027003244/http://hk.geocities.com/power_place2004/
 
       // Year 2008
 
-      // I am the last batch of 3-year cohort for University.  So I had 2 public exams before I started my studies in University.  In those public exams, we can use calculators.
-
-      // And I started calculator programming!  With limited memory for the calculator, I trained my mindset about Code Golf.  I have made games on calculator like “Guess the number”, “Number battle”.
-
-      // I have also sold Flash based games (for $5) by sending swf files via Bluetooth.  That game is called “Fifteen Twenty”.
 
       // Year 2009
 
-      // Friends were going to tutors and got some “secret formulas”.  I started to appreciate program written by others.  For example, for quadratic formulas it seems the optimized version should be “pulling out delta (D)” and return the results as “.5a^-1 * (-b+D” and “-5a^-1 * (-b-D”.  However, by mathematics we have sum of roots as -b/a.
-
-      //   I’ve found others using SD (Statistics Data) mode for saving more variables (By saving as number of entries n and mean of entries).  Then I used complex number to save twice as much (by using the real and imaginary parts), which inspired my polynomial expander.  (Let the user input a polynomial like (X^2+3X+2)(X-5) and then the program returns coefficients of constant, X, X^2, etc..)
-
-      //   Form 4 is the year that I have to decide to let go of Biology in order to pursue my studies in Computer (Named as Computer & Information Technology, abbreviated CIT).
-
-      //   When I sang karaoke, I even sat in front of the computer and opened a notepad.  I used window.moveTo to create a browser earthquake.  It was fun and (some of) my friends marvelled at what I created with just notepad and keyboard.
 
       //   Year 2010
-      //   For CIT, I had to do School Based Assessment (SBA).  My topic is E-class / E-learning Feasibility Study.  Mostly I spent my time preparing for HKCEE (my first public exam, The Hong Kong Certificate of Education Examination).  Of course, I included a Flash game for testing fractions knowledge in the website.
-
-      //   After that, I made the first Flash game that really made myself proud.  That is named “Mistakenly Getting into the Robot Kingdom” (if translated to English).  That’s an “attack” avoidance game and the attack from the sky will kill surrounding enemies when exploded.
-
-      //   (You can find the download link via web archive(https://web.archive.org/web/20091027093037fw_/http://hk.geocities.com/power_place2004/robot.zip))
 
       //     Year 2011
 
