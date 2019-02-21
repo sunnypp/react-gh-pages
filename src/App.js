@@ -25,14 +25,17 @@ const Text = styled(props => <BaseText className={props.className} fontSize={[2,
 `
 
 const GlobalStyle = createGlobalStyle`
+  html {
+    background: rgba(246,245,245,1);
+  }
   body {
     position: relative;
 
     min-height: 100vh;
     margin: 0;
 
-    background: rgba(230,230,230,1);
-    background: linear-gradient(126.58032436206258deg, rgba(246, 245, 245,1) 6.140625%,rgba(220, 220, 220,1) 95.51562499999999%);
+    background: rgba(246,245,245,1);
+    background: linear-gradient(168.58032436206258deg, rgba(246, 245, 245,1) 6.140625%,rgba(220, 220, 220,1) 95.51562499999999%);
     color: rgb(50,50,50);
   }
 
@@ -45,45 +48,238 @@ const Ul = styled.ul`
 
 
 const App = props => {
-  return (
-    <>
-      <GlobalStyle />
-      <Flex m={[3,4,5]} flexDirection='column' alignItems='center'>
-        <Heading m='auto' as='h1' fontSize={[3,4,5]}>About Sunny Pun</Heading>
-        <Text>Hello world!  I am a Full-stack JavaScript developer who first touched HTML 16 years ago!</Text>
-        <Text>I would say myself extraordinary as I:
+  const history = [
+    {
+      year: 2002,
+      impressum: (
+        <Text>At the age of 9, I self-taught HTML and hosted my website on Yahoo! Geocities.</Text>
+      ),
+      description: (
+        <>
+          <Text>At the age of 9, I self-taught HTML and hosted my website on Yahoo! Geocities.  I started because I took my parents’ “joke” “maybe the young boys can learn how to make things for the internet by themselves” a little bit too serious.  I still remember how I tweaked the text for the given HTML source and investigated with HTML tag nesting, and the simple file uploader for uploading static assets.</Text>
+          <Text>I searched on the internet about how to add “different things” to my website.  For instance, how to “punish” people for right clicking on my website trying to steal my code, by showing many alerts and prompts and new windows… (But that didn’t get saved by <Link href='https://web.archive.org/web/20021230155709/http://hk.geocities.com/sunny_ex2003/'>web archive</Link>)</Text>
+          <Text>Oh I even figured out there are <Link href='https://web.archive.org/web/20021229011139/http://3url.net/sunny/'>URL shorteners</Link> out there (note the URL)!</Text>
+        </>
+      )
+    },
+    {
+      year: 2003,
+      impressum: (
+        <Text>I created little Flash games that:
           <Ul>
-            <li>speak English better than Cantonese (though I am born and raised in Hong Kong and have never left Hong Kong for more than 3 months),</li>
-            <li>want to work for helping others -- Yup I care about what I am building</li>
-            <li>enjoy playing and reading about programming.  I play <Link href='https://codegolf.stackexchange.com/a/97921/59806'>Code Golf</Link>.</li>
+            <li>Shows our main character.  Listens to keydown events and shows off different super moves (a-z, 0-9, 36 moves!).</li>
+            <li>“Avoid the borders”.  Whenever mouseover the drawn path, the “Game over” animation is played.</li>
           </Ul>
         </Text>
-      </Flex>
-      <Box bg='black' color='rgb(230,230,230)'>
-        <Box m='auto' p={[3,4,5]} maxWidth={1024}>
-          <Heading as='h1' fontSize={[3,4,5]} fontFamily='Arial'>Frameworks are Dispensible</Heading>
-          <Text>My current motto. </Text>
-          <Text><Text display='inline' color='white' fontWeight='600'>Algorithms</Text> are what are hidden behind the scenes to get problem solved.</Text>
-          <Text>Any frameworks, any paradigms, any languages are just a medium that contains the solution.</Text>
+      ),
+      description: (
+        <>
+          <Text>
+          My mum helped me to get Macromedia Flash (is that Flash MX?) books from the Adult Library (now Flash belongs to Adobe).  I created little Flash games that:
+            <Ul>
+              <li>Shows our main character.  Listens to keydown events and shows off different super moves (a-z, 0-9, 36 moves!).</li>
+              <li>“Avoid the borders”.  Whenever mouseover the drawn path, the “Game over” animation is played.</li>
+            </Ul>
+          </Text>
+
+          <Text>And I was very interested about <Link href='http://lf2.net'>LF2</Link> mods.  Learnt about LF2 mods with my friends -- of course about how to make our own character “the one” (that won’t die at all).  Even if you have (close to) infinite damage, your attack may be reflected.  Instead of adding cool new moves, I’ve found that removing the “body” (hit detection area) results in true invincibility and also smaller file size.</Text>
+        </>
+      )
+    },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    // {
+    //   year: ,
+    //   impressum: (
+        
+    //   ),
+    //   description: (
+        
+    //   )
+    // },
+    ]
+    return (
+      <>
+        <GlobalStyle />
+        <Flex m={[3,4,5]} flexDirection='column' alignItems='center'>
+          <Heading m='auto' as='h1' fontSize={[3,4,5]}>About Sunny Pun</Heading>
+          <Text>Hello world!  I am a Full-stack JavaScript developer who first touched HTML 16 years ago!</Text>
+          <Text>I would say myself extraordinary as I:
+            <Ul>
+              <li>speak English better than Cantonese (though I am born and raised in Hong Kong and have never left Hong Kong for more than 3 months);</li>
+              <li>want to work for helping others -- Yup I care about what I am building;</li>
+              <li>always want to learn more about software industry -- including UX and business!</li>
+              <li>enjoy playing and reading about programming (in my spare time for sure).  I play <Link href='https://codegolf.stackexchange.com/a/97921/59806'>Code Golf</Link>.</li>
+            </Ul>
+          </Text>
+        </Flex>
+        <Box bg='black' color='rgb(230,230,230)'>
+          <Box m='auto' p={[3,4,5]} maxWidth={1024}>
+            <Heading as='h1' fontSize={[3,4,5]} fontFamily='Arial'>Frameworks are Dispensible</Heading>
+            <Text>My current motto. </Text>
+            <Text><Text display='inline' color='white' fontWeight='600'>Algorithms</Text> are what are hidden behind the scenes to get problem solved.</Text>
+            <Text>Any frameworks, any paradigms, any languages are just a medium that contains the solution.</Text>
+          </Box>
         </Box>
-      </Box>
-      <Flex m={[3,4,5]} flexDirection='column' alignItems='center'>
-        <Heading as='h1' fontSize={[3,4,5]}>A Brief History of Sunny Pun</Heading>
-        <Box px={[3,4,5]} maxWidth={1024}>
+        <Flex p={[3,4,5]} flexDirection='column'>
+          <Heading as='h1' fontSize={[3,4,5]} alignSelf='center'>A Brief History of Sunny Pun</Heading>
+    { history.map( hist => {
+      const [ collapse, setCollapse ] = useState(true);
+      return (
+        <Box my={2} maxWidth={1024} onClick={ _ => setCollapse(!collapse) }>
+        <Heading as='h2' fontSize={[2,3,4]}>Year {hist.year} [{collapse?'+':'-'}]</Heading>
+        { collapse ? hist.impressum : hist.description}
+        </Box>
+      )
+    } ) }
     { // <Text>
-      // Year 2002
 
-      // At the age of 9, I self-taught HTML and hosted my website on Yahoo! Geocities.  I started because I took my parents’ “joke” “maybe the young boys can learn how to make things for the internet by themselves” a little bit too serious.  I still remember how I tweaked the text for the given HTML source and investigated with HTML tag nesting, and the simple file uploader for uploading static assets.
-
-      // I searched on the internet about how to add “different things” to my website.  For instance, how to “punish” people for right clicking on my website trying to steal my code, by showing many alerts and prompts and new windows… (But that didn’t get saved by web archive)
-
-      // Oh I even figured out there are URL shorteners out there!
-      // https://web.archive.org/web/20021229011139/http://3url.net/sunny/
-      // https://web.archive.org/web/20021230155709/http://hk.geocities.com/sunny_ex2003/
 
       // Year 2003
 
-      // My mum helped me to get Macromedia Flash (is that Flash MX?) books from the Adult Library (now Flash belongs to Adobe).  I created little games that:
+      // My mum helped me to get Macromedia Flash (is that Flash MX?) books from the Adult Library (now Flash belongs to Adobe).  I created little Flash games that:
       // Shows our main character.  Listens to keydown events and shows off different super moves (a-z, 0-9, 36 moves!).
       // “Avoid the borders”.  Whenever mouseover the drawn path, the “Game over” animation is played.
 
@@ -173,7 +369,7 @@ const App = props => {
       //     Idea:
       //     Have no rules and no standards.  (That said, we’ll still do some admin work to monitor which tasks are too far from human morale standards)
       //     Give meaning to your life.  Define your life by what you do.
-      //     Alleviate the self-harm / suicidal culture with the sense of achievement 
+      //     Alleviate the self-harm / suicidal culture with the sense of achievement
       //     Color Battle!  Let users vote for the “color” for the tasks.
 
       //     Looking back, if we’ve made it to general public (well, a big IF indeed), we could have involved AI like this:
@@ -183,7 +379,7 @@ const App = props => {
 
       //     2014
 
-      //     I had a fruitful year as the Performance Secretary of Christian Choir, HKUSU -- which implies that I am also the chairman for Annual Performance Organizing Committee. 
+      //     I had a fruitful year as the Performance Secretary of Christian Choir, HKUSU -- which implies that I am also the chairman for Annual Performance Organizing Committee.
 
       //     Towards the end of the year, I planned this project with one of my best friends:
 
@@ -200,7 +396,7 @@ const App = props => {
       //     2015
 
       //     Tencent Audience’s Favourite (Runner-Up)
-      //     Team SnatchIt @ HackUST 2015 
+      //     Team SnatchIt @ HackUST 2015
 
       //     Project: SnatchIt (hackUST)
 
@@ -212,13 +408,13 @@ const App = props => {
       //     Developer @ Neto Ecommerce Solutions
       //     (Architecture, Automation Guild)
       //     jQuery Front-end web programming
-      //     Perl & PHP Back-end server side programming 
+      //     Perl & PHP Back-end server side programming
 
       //     2016
       //     Developer of the Month @ Nov
       //     Due to porting JasmineJS Test Framework to Perl and tailor-making test modules to ease refactoring of 7-year-old system
 
-      //     Slackbot for Server Vacancy Management 
+      //     Slackbot for Server Vacancy Management
 
       //     Project Yose
 
@@ -229,7 +425,7 @@ const App = props => {
 
       //     Using Neovim as an Editor and writing Plugins
 
-      //     Chrome Plugin for automating form filling for interal testing 
+      //     Chrome Plugin for automating form filling for interal testing
 
       //     Project: Cantonese Lyrics Experimental Filler (Clef)
       //     P.S. Later to be renamed as Cantonese Lyrics Established Filler
@@ -246,9 +442,9 @@ const App = props => {
 
       //     2018
 
-      //     Senior Architect @ Pred 
+      //     Senior Architect @ Pred
       // </Text>
-    }        </Box>
+    }
       </Flex>
     {
       // <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24">
