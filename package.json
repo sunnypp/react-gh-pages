@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
-    "link": "git checkout gh-pages && git pull && git checkout master && git pull && git merge gh-pages && git push && git checkout develop"
+    "link": "git checkout gh-pages && git pull && git checkout master && git pull && git merge --no-edit gh-pages && git push && git checkout develop"
   },
   "eslintConfig": {
     "extends": "react-app"
