@@ -323,33 +323,76 @@ const App = props => {
 
       )
     },
-    // {
-    //   year: ,
-    //   impressum: (
+    {
+      year: 2016,
+      impressum: (
+        <>
+        <Text>Side Projects: NutShell, Yose, Hunta</Text>
+        <Text>Running the extra mile for my job.  Got Develoepr of the Month @ November.  Kept running.</Text>
+        </>
+      ),
+      description: (
+        <>
+        <Text>Project: NutShell</Text>
+        <Text>NutShell is the Openrice / Yelp for healthy food.  A simple, straight-forward yet "not seen in the market" idea.  I collaborated with one of the friends from the Nutritional Science Major.  We had a promotional video.  The stack as Meteor + Angular.  We had limited time and that was not continued (it takes time to try different restaurants!)</Text>
+        <Text>Project: Yose</Text>
+        <Text>Yose is the Quora for Go (Chess game).  Alphago has beaten Lee Sodol by 4-1.  My friend (and I) wanted commentaries to be voted upon and the knowledge of Go to be shared across the globe.  Something special about Go is that the commentaries can usually a composition of simple sentences.  For instance, "Move 87 good", "Move 105 lacks room" -- simple "Noun + adjective" or "Subject + Verb + Object" without much complex clauses.  It means translation quality can somehow be guaranteed.</Text>
+        <Text>We didn't make it because back in that time we cannot find an easily hackable SGF reader to attach "threads" to the moves.</Text>
+        <Text>Project: Hunta</Text>
+        <Text>I came across an idea similar to this on <Link href='https://uxdesign.cc/jibe-a-social-networking-platform-ux-case-study-a061e7a3f360'>Medium</Link> (but Hunta is more than actvities).  It was a 9-people team and I had my very first time experience as a hands-on Scrum Master.  When I was asked to quit by the only designer in the team, the lines were "You know we just want to have something to build upon for fun... We don't want to get too serious".</Text>
+        <Text>So I left even others wanted me to stay.  I was the late comer to that team for leading them anyways.</Text>
+        <Heading as='h3' fontSize={[2,2,3]}>About my job this year</Heading>
+        <Text>Due to porting JasmineJS Test Framework to Perl and tailor-making test modules to ease refactoring of 7-year-old system, I earned Developer of the Month in November.  Part of it is open sourced <Link href='https://github.com/sunnypp/peri'>here</Link>.  But the bigger part of it (cannot be open sourced) is about implementing Database Mocks and capturing `print` calls in CGI files.</Text>
+        <Text>And I've made a Slackbot for Server Vacancy Management.  An incident caused others to realize that a Slack channel cannot check vacancy of a server, and at that time I already have the bot ready as PoC.</Text>
+        </>
+      )
+    },
+    {
+      year: 2017,
+      impressum: (
+        <>
+        <Text>Side Projects: Appoint, Testify, Glucolog, CLEF</Text>
+        <Text>Started using Neovim.  Writing plugins to help others: IntelliJ Plugin, Chrome Plugins, VIM Plugin...</Text>
+        </>
+      ),
+      description: (
+        <>
+        <Text>Project: Appoint</Text>
+        <Text>Freelance Job which I finished only Stage 1.  Ionic App with Firebase.  Can't tell more here.</Text>
+        <Text>Project: Testify</Text>
+        <Text>For users to put questions inside a Google Sheet, and the App will show the questions and let one revise! (Ionic)</Text>
+        <Text>Project: Glucolog</Text>
+        <Text>Firebase (with Auth) with Ionic to mark Glucose level.</Text>
+        <Text>Project: CLEF (Cantonese Lyrics Experimental Filler )</Text>
+          <Text>Usage: Ultimately, fill in Cantonese Lyrics with a MIDI input.  Optionally provide existing lyrics in other language (e.g. English) and the result will be in Cantonese with similar meaning</Text>
 
-    //   ),
-    //   description: (
+        <Text>
+        Ideas:
+        <Ul>
+        <li>Using user-input dictionaries, no need to manually maintain newly invented buzzwords</li>
+        <li>Analyzing hot keyword trends for the active users, who are also more likely to be active on the internet</li>
+        <li>Appreciating Cantonese Lyrics as an art</li>
+        <li>Attempt to push forward Cantonese Natural Language Processing via getting users correcting auto-sliced Cantonese sentences</li>
+        <li>Building foundation for translation services from other languages to Cantonese</li>
+        </Ul>
+        </Text>
+        <Heading as='h3' fontSize={[2,2,3]}>About my job this year</Heading>
+        <Text>Was in a team to build a new platform.  But then switched back to support Perl.</Text>
+        <Text>Wrote IntelliJ Plugin for running unit tests with a shortcut.  (Why take the time to get the path of the file for hot reload when we can do it in the editor?  Although the technical lead likes the <Link href='https://stackoverflow.com/a/42080289/6712483'>CLI version</Link> more.)</Text>
+        <Text>Chrome Plugins are like running JavaScript in the console with a GUI!  Automating form filling for internal manual testing was wonderful. (FF)</Text>
+        </>
 
-    //   )
-    // },
-    // {
-    //   year: ,
-    //   impressum: (
-
-    //   ),
-    //   description: (
-
-    //   )
-    // },
-    // {
-    //   year: ,
-    //   impressum: (
-
-    //   ),
-    //   description: (
-
-    //   )
-    // },
+      )
+    },
+    {
+      year: 2018,
+      impressum: (
+        <Text>My year as the Senior Architect in Pred Limited.</Text>
+      ),
+      description: (
+        <Text>You'll find all the details in my CV, I guess.</Text>
+      )
+    },
     // {
     //   year: ,
     //   impressum: (
@@ -440,13 +483,6 @@ const App = props => {
 
 
       //     2016
-      //     Developer of the Month @ Nov
-      //     Due to porting JasmineJS Test Framework to Perl and tailor-making test modules to ease refactoring of 7-year-old system
-
-      //     Slackbot for Server Vacancy Management
-
-      //     Project Yose
-
 
       //     2017
 
@@ -456,17 +492,7 @@ const App = props => {
 
       //     Chrome Plugin for automating form filling for interal testing
 
-      //     Project: Cantonese Lyrics Experimental Filler (Clef)
-
-      //     Usage: Ultimately, fill in Cantonese Lyrics with a MIDI input.
-      //     Optionally provide existing lyrics in other language (e.g. English) and the result will be in Cantonese with similar meaning
-
-      //     Idea:
-      //     Using user-input dictionaries, no need to manually maintain newly invented buzzwords
-      //     Analyzing hot keyword trends for the active users, who are also more likely to be active on the internet
-      //     Appreciating Cantonese Lyrics as an art
-      //     Attempt to push forward Cantonese Natural Language Processing via getting users correcting auto-sliced Cantonese sentences
-      //     Building foundation for translation services from other languages to Cantonese
+      //     Project: (Clef)
 
       //     2018
 
