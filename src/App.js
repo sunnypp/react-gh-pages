@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import {
   Box as BaseBox,
-  Card,
   Flex,
   Image,
   Heading as BaseHeading,
@@ -336,7 +335,7 @@ const App = props => {
         <Text>Project: NutShell</Text>
         <Text>NutShell is the Openrice / Yelp for healthy food.  A simple, straight-forward yet "not seen in the market" idea.  I collaborated with one of the friends from the Nutritional Science Major.  We had a promotional video.  The stack as Meteor + Angular.  We had limited time and that was not continued (it takes time to try different restaurants!)</Text>
         <Text>Project: Yose</Text>
-        <Text>Yose is the Quora for Go (Chess game).  Alphago has beaten Lee Sodol by 4-1.  My friend (and I) wanted commentaries to be voted upon and the knowledge of Go to be shared across the globe.  Something special about Go is that the commentaries can usually a composition of simple sentences.  For instance, "Move 87 good", "Move 105 lacks room" -- simple "Noun + adjective" or "Subject + Verb + Object" without much complex clauses.  It means translation quality can somehow be guaranteed.</Text>
+        <Text>Yose is the Quora for Go (Chess game).  Alphago has beaten Lee Sodol by 4-1.  My friend (and I) wanted commentaries to be voted upon and the knowledge of Go to be shared across the globe.  Something special about Go is that the commentaries are usually a composition of simple sentences.  For instance, "Move 87 good", "Move 105 lacks room" -- simple "Noun + adjective" or "Subject + Verb + Object" without much complex clauses.  It means translation quality can somehow be guaranteed.</Text>
         <Text>We didn't make it because back in that time we cannot find an easily hackable SGF reader to attach "threads" to the moves.</Text>
         <Text>Project: Hunta</Text>
         <Text>I came across an idea similar to this on <Link href='https://uxdesign.cc/jibe-a-social-networking-platform-ux-case-study-a061e7a3f360'>Medium</Link> (but Hunta is more than actvities).  It was a 9-people team and I had my very first time experience as a hands-on Scrum Master.  When I was asked to quit by the only designer in the team, the lines were "You know we just want to have something to build upon for fun... We don't want to get too serious".</Text>
@@ -440,7 +439,7 @@ const App = props => {
     { history.map( hist => {
       const [ collapse, setCollapse ] = useState(true);
       return (
-        <Box my={2} maxWidth={1024} onClick={ _ => setCollapse(!collapse) }>
+        <Box my={2} maxWidth={1024} onClick={ _ => setCollapse(!collapse) } key={hist.year}>
         <Heading as='h2' fontSize={[2,3,4]}>Year {hist.year} [{collapse?'+':'-'}]</Heading>
         { collapse ? hist.impressum : hist.description}
         </Box>
