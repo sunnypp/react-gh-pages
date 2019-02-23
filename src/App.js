@@ -8,6 +8,7 @@ import {
   Link as BaseLink,
   Text as BaseText
 } from 'rebass';
+import SocialMediaIcons from 'react-social-media-icons';
 
 const Box = styled(BaseBox)`
   max-width: ${ props => props.maxWidth+'px' || 'default' };
@@ -425,6 +426,16 @@ const App = props => {
               <li>enjoy playing and reading about programming (in my spare time for sure).  I play <Link href='https://codegolf.stackexchange.com/a/97921/59806'>Code Golf</Link>.</li>
             </Ul>
           </Text>
+        <SocialMediaIcons
+          icons={[
+            { className: 'fa-github', url: 'https://github.com/sunnypp' },
+            { className: 'fa-gitlab', url: 'https://gitlab.com/sunnyppsp' },
+            { className: 'fa-stack-exchange', url: 'https://stackexchange.com/users/5950524/sunny-pun?tab=accounts' },
+            { className: 'fa-quora', url: 'https://www.quora.com/profile/Sunny-Pun' },
+          ]}
+          iconSize={'1.3em'}
+          iconColor={'#333333'}
+        />
         </Flex>
         <Box bg='black' color='rgb(230,230,230)'>
           <Box m='auto' p={[3,4,5]} maxWidth={1024}>

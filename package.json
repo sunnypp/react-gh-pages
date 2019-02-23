@@ -7,6 +7,7 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5",
+    "react-social-media-icons": "^1.1.0",
     "rebass": "^3.0.1",
     "styled-components": "^4.1.4-alpha.5",
     "styled-system": "^3.2.1"
