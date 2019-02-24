@@ -390,18 +390,29 @@ const App = props => {
         <Text>My year as the Senior Architect in Pred Limited.</Text>
       ),
       description: (
-        <Text>You'll find all the details in my CV, I guess.</Text>
+        <Text>
+          Duties include:
+          <Ul>
+          <li>Hands-on Development from Scratch (>5 projects)</li>
+          <li>Client-Facing Tendering / Demonstration</li>
+          <li>Collaboration with Other Developers</li>
+          <li>Collaboration with Vendors / Freelancers</li>
+          <li>Collaboration with Clients and Business Team Project Managers</li>
+          <li>Research & Development of New Tools As Proof-Of-Concept (POC)</li>
+          </Ul>
+        </Text>
       )
     },
-    // {
-    //   year: ,
-    //   impressum: (
+    {
+      year: 2019,
+      impressum: (
+        <Text>Made a Progressive Web App and this website!</Text>
 
-    //   ),
-    //   description: (
-
-    //   )
-    // },
+      ),
+      description: (
+        <Text>The PWA?  <Link href='https://glucolog.now.sh'>Here it is!</Link></Text>
+      )
+    },
     // {
     //   year: ,
     //   impressum: (
