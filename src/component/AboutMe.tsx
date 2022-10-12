@@ -2,7 +2,6 @@ import { Trans, withTranslation } from "react-i18next"
 import styled from "styled-components"
 import sunnyToastPhoto from '../asset/photo/sunny_toast.png'
 
-/* About Me */
 const AboutMe = styled.div`
 background: ${props => props.theme.palette.aboutMe.background};
 font-size:  30px;
