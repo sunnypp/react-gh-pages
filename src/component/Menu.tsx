@@ -1,5 +1,5 @@
 import AboutMeIcon from '../asset/icon/aboutMe.svg'
-import MyJourneyIcon from '../asset/icon/myJourney.svg'
+import ExperienceIcon from '../asset/icon/experience.svg'
 import NonWorkIcon from '../asset/icon/nonWork.svg'
 import GearsIcon from '../asset/icon/gears.svg'
 import LifeGoalsIcon from '../asset/icon/lifeGoals.svg'
@@ -43,7 +43,7 @@ width: 48px;
 
 const Icons: Record<string, string> = {
   aboutMe: AboutMeIcon,
-  myJourney: MyJourneyIcon,
+  experience: ExperienceIcon,
   nonWork: NonWorkIcon,
   gears: GearsIcon,
   lifeGoals: LifeGoalsIcon,
@@ -56,7 +56,7 @@ const MenuButton = (key: string, t: any) => <IconButton href={`#${key}`}>
 
 const Component = ({ t }: { t: any }) => <Menu>
   {MenuButton("aboutMe", t)}
-  {MenuButton("myJourney", t)}
+  {MenuButton("experience", t)}
   {MenuButton("nonWork", t)}
   {MenuButton("gears", t)}
   {MenuButton("lifeGoals", t)}

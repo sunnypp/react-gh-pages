@@ -39,19 +39,20 @@ export const defaultTheme: DefaultTheme = {
       doodle:     defaultColors.BLACK,
       highlight:  defaultColors.OVERLAY,
     },
-    myJourney: {
+    experience: {
       title:      defaultColors.BLACK,
-      background: defaultColors.BLUE,
+      background: "rgb(206, 225, 231)",
       content:    defaultColors.BLACK,
       doodle:     defaultColors.WHITE,
+      highlight:  defaultColors.OVERLAY,
     },
-    achievements: {
+    nonWork: {
       title:      defaultColors.BLACK,
       background: defaultColors.YELLOW,
       content:    defaultColors.BLACK,
       doodle:     defaultColors.BLACK,
     },
-    howIWork: {
+    gears: {
       title:      defaultColors.BLACK,
       background: defaultColors.BLUE,
       content:    defaultColors.BLACK,
