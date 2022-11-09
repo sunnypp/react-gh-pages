@@ -1,6 +1,7 @@
 import { Trans, withTranslation } from "react-i18next"
 import styled from "styled-components"
 import sunnyToastPhoto from '../asset/photo/sunny_toast.png'
+import { Title } from "./Title"
 
 const AboutMe = styled.div`
 background: ${props => props.theme.palette.aboutMe.background};
@@ -17,12 +18,6 @@ width: 30%;
 top: 10px;
 right: -20px;
 transform: rotate(-10deg);
-`
-
-const Title = styled.div`
-font-size: 48px;
-margin: ${props => props.theme.size.size3} 0;
-font-weight: 600;
 `
 
 const Name = styled.span`
