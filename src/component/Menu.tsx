@@ -12,7 +12,7 @@ background: ${props => props.theme.palette.menu.background};
 bottom: 0;
 display: flex;
 flex-direction: row;
-height: 70px;
+height: ${props => props.theme.size.menu};
 position: fixed;
 width: 100%;
 z-index: 9999;

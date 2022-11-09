@@ -20,6 +20,7 @@ export const defaultTheme: DefaultTheme = {
     size1: "4px",
     size2: "8px",
     size3: "16px",
+    menu: "70px",
   },
   palette: {
     common: {
