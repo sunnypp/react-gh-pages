@@ -9,6 +9,7 @@ const defaultColors = {
   OVERLAY: "rgba(255, 255, 255, 0.9)",
   GOLD:    "#998866",
   BLACK:   "#001021",
+  GREY:    "#445043",
 }
 
 export const defaultTheme: DefaultTheme = {
@@ -48,10 +49,12 @@ export const defaultTheme: DefaultTheme = {
     },
     experience: {
       title:      defaultColors.BLACK,
-      background: "rgb(206, 225, 231)",
+      subtitle:   defaultColors.GREY,
+      background: "rgb(217, 230, 231)",
       content:    defaultColors.BLACK,
       doodle:     defaultColors.WHITE,
       highlight:  defaultColors.OVERLAY,
+      separator:  defaultColors.BLUE,
     },
     nonWork: {
       title:      defaultColors.BLACK,
