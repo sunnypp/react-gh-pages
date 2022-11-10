@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Enhancements (This is an aggregated list, to be done in the future)
+
+- Upward scrolling from the start
+- Responsive for desktop
+- Chinese translations
+- Title font (consider using a handwritten one)
+- Sticky company names in Experience section
+- Modify menu to use circular buttons with arrows
+- Arrow on UI for scroll direction hint
+- Flying widget with scroll detection (I know what this means haha)
+
 ## Available Scripts
 
 In the project directory, you can run:
