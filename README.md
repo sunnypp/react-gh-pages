@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Upward scrolling from the start
 - Responsive for desktop
+- Gradient backgrounds
+- Video backgrounds
 - Chinese translations
 - Title font (consider using a handwritten one)
 - Sticky company names in Experience section
