@@ -18,8 +18,8 @@ function App({ t }: { t: any }) {
     <ThemeProvider theme={defaultTheme}>
       <Menu />
       <Container>
-          <AboutMe />
-          <Experience />
+        <AboutMe />
+        <Experience />
       </Container>
     </ThemeProvider>
   )
