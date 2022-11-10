@@ -6,4 +6,10 @@ margin: ${props => props.theme.size.size4} 0;
 font-weight: 600;
 `
 
-export { Title };
+const Subtitle = styled.div`
+font-size: ${props => props.theme.size.size5};
+font-weight: 600;
+line-height: 2;
+`
+
+export { Title, Subtitle };
