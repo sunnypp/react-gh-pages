@@ -5,16 +5,17 @@ import { Title } from "./Title"
 
 const AboutMe = styled.div`
 background: ${props => props.theme.palette.aboutMe.background};
-font-size:  30px;
-line-height: 48px;
+font-size: ${props => props.theme.size.font.content};
+height: 55vh;
+line-height: 1.5;
 overflow: hidden;
-padding: ${props => props.theme.size.size3};
+padding: ${props => props.theme.size.menu} ${props => props.theme.size.size4} ${props => props.theme.size.size3};
 position: relative;
 `
 
 const Photo = styled.img`
 position: absolute;
-width: 30%;
+width: 40%;
 top: 10px;
 right: -20px;
 transform: rotate(-10deg);
