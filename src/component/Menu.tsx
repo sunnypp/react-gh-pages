@@ -24,7 +24,7 @@ display: flex;
 flex: 1;
 flex-direction: column;
 align-items: center;
-font-size: 12px;
+font-size: ${props => props.theme.size.font.small};
 padding: ${props => props.theme.size.size1};
 text-align: center;
 text-decoration: none;
@@ -37,8 +37,8 @@ background: ${props => props.theme.palette.menu.hover};
 
 const IconImage = styled.img`
 display: block;
-height: 48px;
-width: 48px;
+height: ${props => props.theme.size.size6};
+width: ${props => props.theme.size.size6};
 `
 
 const Icons: Record<string, string> = {
