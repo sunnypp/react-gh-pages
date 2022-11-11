@@ -51,10 +51,10 @@ font-weight: 900;
 line-height: 2.5;
 `
 
-const Component = ({ t }: { t: any }) => <AboutMe id="aboutMe">
+const Component = ({ t }: { t: any }) => <AboutMe>
   <Photo src={sunnyToastPhoto}></Photo>
   <Greetings>
-    <Trans i18nKey="aboutMe.greetings"><Hi>hi! 👋🏻</Hi><br/>I'm <Name>Sunny Pun ☀️</Name>, a <Em>Passionate Programmer 🔥</Em> who also cares about <Em>Design 🎨 & Product 💁🏻‍♂️</Em>, for <Em>next generations 👦🏻🧒🏼👧🏾</Em>.</Trans>
+    <Trans i18nKey="aboutMe.greetings"><Hi id="aboutMe">hi! 👋🏻</Hi><br/>I'm <Name>Sunny Pun ☀️</Name>, a <Em>Passionate Programmer 🔥</Em> who also cares about <Em>Design 🎨 & Product 💁🏻‍♂️</Em>, for <Em>next generations 👦🏻🧒🏼👧🏾</Em>.</Trans>
   </Greetings>
 </AboutMe>
 
