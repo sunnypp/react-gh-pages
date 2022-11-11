@@ -7,7 +7,7 @@ const resources = {
     translation: {
       aboutMe: {
         title: "About Me",
-        greetings: "hi! I'm <1>Sunny Pun</1>, a <br/><3>Passionate Programmer</3><br/> who also cares about <br/><5>Design & Product</5>, for <br/> the sake of <7>next generations</7>."
+        greetings: "<0>hi! 👋🏻</0><br/>I'm <3>Sunny Pun ☀️</3>, a <br/><5>Passionate Programmer 🔥</5><br/> who also cares about <br/><7>Design 🎨 & Product 💁🏻‍♂️</7>, for <br/><9>next generations 👦🏻🧒🏼👧🏾</9>."
       },
       experience: {
         title: "Experience",

@@ -27,12 +27,14 @@ export const defaultTheme: DefaultTheme = {
     menu:  "72px",
     font: {
       small: "12px",
-      content: "24px",
+      content: "16px",
+      big: "24px",
     },
   },
   palette: {
     common: {
-      small: defaultColors.GOLD,
+      small:     defaultColors.GOLD,
+      secondary: defaultColors.GREY,
     },
     menu: {
       icon:       defaultColors.BLACK,
@@ -42,7 +44,7 @@ export const defaultTheme: DefaultTheme = {
     },
     aboutMe: {
       title:      defaultColors.BLACK,
-      background: defaultColors.YELLOW,
+      background: `linear-gradient(45deg, ${defaultColors.ORANGE}, ${defaultColors.YELLOW});`,
       content:    defaultColors.BLACK,
       doodle:     defaultColors.BLACK,
       highlight:  defaultColors.OVERLAY,

@@ -10,6 +10,7 @@ const Container = styled.div`
 display: flex;
 flex: 0 1 auto;
 flex-direction: column-reverse;
+overflow-x: clip;
 padding-bottom: ${props => props.theme.size.menu};
 `
 
