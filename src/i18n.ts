@@ -54,10 +54,41 @@ const resources = {
         startup: "I've joined startup competitions and have a few startup attempts. Details to be added later or please ask me in person! It was probably too detailed <1>here (my old portfolio on Web Archive)</1>",
       },
       gears: {
-        "title": "Gears",
+        title: "Gears",
+        lists: [
+          {
+            name: "LG OLED 48-inch TV",
+            description: "Inspired by <1>this video</1>, I use such a large screen as freely-movable-and-rotatable 27-inch monitors. And I often open 6+ files using 2/3 of my screen leaving 1/3 for browsers and messaging. 📺",
+          },
+          {
+            name: "LG SL4 Soundbar",
+            description: "There was a great discount when I bought this with the TV. I then enjoyed playing music while working -- sometimes energetic ones, sometimes soothing ones -- without my headphones on. 🎼",
+          },
+          {
+            name: "Ultimate Hacking Keyboard",
+            description: "A highly customizable keyboard with layers and macros. It can be used as a split keyboard too. 🤲🏻"
+          },
+          {
+            name: "RollerMouse Red",
+            description: "Moving the cursor without fingers leaving the home row on keyboard. 👍🏻"
+          },
+          {
+            name: "PC Cooling Pad",
+            description: "This boosts the machine's performance. I have a story to tell about it. 😉",
+          },
+        ],
+        extraInfo: "I have other gears like a portable computer stand, an eGPU, and video-audio equipments like microphones, headphones, a stabilizer, etc.. I love everyone of them."
       },
       lifeGoals: {
-        "title": "Life Goals",
+        title: "Life Goals",
+        abstract: "These are super important to me, in no particular order:",
+        lists: [
+          "To be a spiritual giant ✝️",
+          "To do good for next generations 🚼",
+          "To spread love 🧡",
+          "To empower others 💪🏻",
+          "To make Cantonese Christian Choral Music 🎵",
+        ]
       }
     }
   },
