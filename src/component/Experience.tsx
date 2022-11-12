@@ -1,7 +1,7 @@
 import { Trans, withTranslation } from "react-i18next"
 import styled from "styled-components"
 import ExperiencePhoto from "../asset/photo/experience.jpg"
-import { Title, Subtitle } from "./Title"
+import { Em, StickyTitle, Subtitle } from "./Title"
 
 const Experience = styled.div`
 background-color: ${props => props.theme.palette.experience.background};
@@ -14,12 +14,6 @@ line-height: 1.5;
 /* as 100% is the image width, taking aspect ratio into account */
 padding: 0 ${props => props.theme.size.size3} 40vw;
 position: relative;
-`
-
-const StickyTitle = styled(Title)`
-bottom: calc(${props => props.theme.size.menu} + 10px);
-display: inline-block;
-position: sticky;
 `
 
 const StickySubtitle = styled(Subtitle)`
@@ -66,10 +60,6 @@ padding-inline-start: 20px;
 const TightListItem = styled.li`
 line-height: 1.25;
 margin: 8px 0;
-`
-
-const Em = styled.span`
-background: ${props => props.theme.palette.experience.highlight};
 `
 
 const Small = styled.span`

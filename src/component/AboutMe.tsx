@@ -1,6 +1,7 @@
 import { Trans, withTranslation } from "react-i18next"
 import styled, { keyframes } from "styled-components"
 import sunnyToastPhoto from '../asset/photo/sunny_toast.png'
+import { Em } from "./Title"
 
 const gradient = keyframes`
 	0%   { background-position: 0%   50%; }
@@ -35,11 +36,6 @@ font-size: ${props => props.theme.size.font.big};
 font-weight: 900;
 `
 
-const Em = styled.span`
-background: ${props => props.theme.palette.aboutMe.highlight};
-font-size: ${props => props.theme.size.font.big};
-`
-
 const Greetings = styled.div`
 position: relative;
 z-index: 1;
@@ -51,12 +47,15 @@ font-family: ${props => props.theme.typography.handwriting};
 font-size: ${props => props.theme.size.menu};
 font-weight: 900;
 line-height: 2.5;
+
+const Big = styled(Em)`
+font-size: ${props => props.theme.size.font.big};
 `
 
 const Component = ({ t }: { t: any }) => <AboutMe>
   <Photo src={sunnyToastPhoto}></Photo>
   <Greetings>
-    <Trans i18nKey="aboutMe.greetings"><Hi id="aboutMe">hi! 👋🏻</Hi><br/>I'm <Name>Sunny Pun ☀️</Name>, a <Em>Passionate Programmer 🔥</Em> who also cares about <Em>Design 🎨 & Product 💁🏻‍♂️</Em>, for <Em>next generations 👦🏻🧒🏼👧🏾</Em>.</Trans>
+    <Trans i18nKey="aboutMe.greetings"><Hi id="aboutMe">hi! 👋🏻</Hi><br/>I'm <Name>Sunny Pun ☀️</Name>, a <Big>Passionate Programmer 🔥</Big> who also cares about <Big>Design 🎨 & Product 💁🏻‍♂️</Big>, for <Big>next generations 👦🏻🧒🏼👧🏾</Big>.</Trans>
   </Greetings>
 </AboutMe>
 
