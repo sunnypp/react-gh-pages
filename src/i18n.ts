@@ -83,11 +83,11 @@ const resources = {
         title: "Life Goals",
         abstract: "These are super important to me, in no particular order:",
         lists: [
-          "To be a spiritual giant ✝️",
-          "To do good for next generations 🚼",
-          "To spread love 🧡",
-          "To empower others 💪🏻",
-          "To make Cantonese Christian Choral Music 🎵",
+          "Be a spiritual giant ✝️",
+          "Do good for next generations 🚼",
+          "Spread love 🧡",
+          "Empower others 💪🏻",
+          "Make Cantonese Christian Choral Music 🎵",
         ]
       }
     }

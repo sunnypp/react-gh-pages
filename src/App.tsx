@@ -7,6 +7,7 @@ import NonWork from "./component/NonWork"
 import Gears from "./component/Gears"
 import Menu from "./component/Menu"
 import { withTranslation } from "react-i18next"
+import LifeGoals from "./component/LifeGoals"
 
 const Container = styled.div`
 display: flex;
@@ -26,6 +27,7 @@ function App({ t }: { t: any }) {
         <Experience />
         <NonWork />
         <Gears />
+        <LifeGoals />
       </Container>
     </ThemeProvider>
   )

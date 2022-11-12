@@ -79,10 +79,10 @@ export const defaultTheme: DefaultTheme = {
       doodle:     defaultColors.BLACK,
     },
     lifeGoals: {
-      title:      defaultColors.BLACK,
-      background: defaultColors.ORANGE,
-      content:    defaultColors.BLACK,
-      doodle:     defaultColors.BLACK,
+      title:      defaultColors.WHITE,
+      background: defaultColors.NIGHT,
+      content:    defaultColors.WHITE,
+      doodle:     defaultColors.WHITE,
     },
   }
 }
