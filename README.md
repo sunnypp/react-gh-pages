@@ -6,10 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Upward scrolling from the start
 - Responsive for desktop
-- Gradient backgrounds
+- Cooling Pad story
+- Gears photo
 - Video backgrounds
 - Chinese translations
-- Title font (consider using a handwritten one)
 - Modify menu to use circular buttons with arrows
 - Arrow on UI for scroll direction hint
 - Flying widget with scroll detection (I know what this means haha)
