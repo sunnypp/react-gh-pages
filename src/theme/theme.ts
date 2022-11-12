@@ -50,7 +50,9 @@ export const defaultTheme: DefaultTheme = {
     },
     aboutMe: {
       title:      defaultColors.BLACK,
-      background: `linear-gradient(45deg, ${defaultColors.ORANGE}, ${defaultColors.YELLOW});`,
+      background: `linear-gradient(45deg, ${defaultColors.YELLOW}, ${defaultColors.ORANGE}, ${defaultColors.YELLOW}, ${defaultColors.ORANGE}, ${defaultColors.YELLOW});`,
+      hi:         defaultColors.BLUE,
+      hiShadow:   defaultColors.NIGHT,
       content:    defaultColors.BLACK,
       doodle:     defaultColors.BLACK,
       highlight:  defaultColors.OVERLAY,

@@ -9,6 +9,7 @@ import { withTranslation } from 'react-i18next'
 const Menu = styled.nav`
 align-items: center;
 background: ${props => props.theme.palette.menu.background};
+border-top: 4px dashed #fff;
 bottom: 0;
 display: flex;
 flex-direction: row;

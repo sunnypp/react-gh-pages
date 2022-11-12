@@ -18,14 +18,14 @@ position: relative;
 
 const StickySubtitle = styled(Subtitle)`
 left: 50vw;
-bottom: calc(${props => props.theme.size.menu} + 40px);
+bottom: calc(${props => props.theme.size.menu} + ${props => props.theme.size.size6});
 color: ${props => props.theme.palette.experience.subtitle};
 display: inline-block;
 position: sticky;
 z-index: 2;
 `
 const StickyDuration = styled.div`
-bottom: calc(${props => props.theme.size.menu} + 10px);
+bottom: calc(${props => props.theme.size.menu} + ${props => props.theme.size.size2});
 display: block;
 font-size: ${props => props.theme.size.font.small};
 position: sticky;
@@ -44,7 +44,7 @@ margin: ${props => props.theme.size.size4} 0;
 `
 
 const HorizontalRule = styled.div`
-background: ${props => props.theme.palette.experience.separator};
+border-top: ${props => props.theme.size.size1} dashed ${props => props.theme.palette.experience.separator};
 height: 5px;
 width: 100%;
 `

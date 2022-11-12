@@ -13,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Modify menu to use circular buttons with arrows
 - Arrow on UI for scroll direction hint
 - Flying widget with scroll detection (I know what this means haha)
+- Fix font size grid so sticky elements align better
 
 ## Available Scripts
 

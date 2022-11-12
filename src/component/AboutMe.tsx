@@ -22,11 +22,12 @@ z-index: 2;
 `
 
 const Photo = styled.img`
+filter: drop-shadow(-6px -6px 1px #fff);
 position: absolute;
-width: 45%;
-top: -50px;
 right: -20px;
+top: -50px;
 transform: rotate(-10deg);
+width: 45%;
 `
 
 const Name = styled.span`
@@ -42,11 +43,13 @@ z-index: 1;
 `
 
 const Hi = styled.span`
-color: ${props => props.theme.palette.common.secondary};
+color: ${props => props.theme.palette.aboutMe.hi};
 font-family: ${props => props.theme.typography.handwriting};
 font-size: ${props => props.theme.size.menu};
 font-weight: 900;
 line-height: 2.5;
+text-shadow: -3px -3px 1px #fff, 3px -3px 1px #fff, -3px 3px 1px #fff, 3px 3px 1px #fff;
+`
 
 const Big = styled(Em)`
 font-size: ${props => props.theme.size.font.big};
