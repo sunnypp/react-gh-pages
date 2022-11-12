@@ -20,7 +20,6 @@ position: sticky;
 const Subtitle = styled.div`
 font-size: ${props => props.theme.size.size4};
 font-weight: 600;
-line-height: 2;
 `
 
 const Small = styled.span`

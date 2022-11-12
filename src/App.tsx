@@ -4,6 +4,7 @@ import { defaultTheme } from "./theme/theme"
 import AboutMe from "./component/AboutMe"
 import Experience from "./component/Experience"
 import NonWork from "./component/NonWork"
+import Gears from "./component/Gears"
 import Menu from "./component/Menu"
 import { withTranslation } from "react-i18next"
 
@@ -24,6 +25,7 @@ function App({ t }: { t: any }) {
         <AboutMe />
         <Experience />
         <NonWork />
+        <Gears />
       </Container>
     </ThemeProvider>
   )

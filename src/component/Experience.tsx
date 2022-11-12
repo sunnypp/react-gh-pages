@@ -18,12 +18,13 @@ position: relative;
 
 const StickySubtitle = styled(Subtitle)`
 left: 50vw;
-bottom: calc(${props => props.theme.size.menu} + ${props => props.theme.size.size6});
+bottom: calc(${props => props.theme.size.menu} + ${props => props.theme.size.size6} + ${props => props.theme.size.size2});
 color: ${props => props.theme.palette.experience.subtitle};
 display: inline-block;
 position: sticky;
 z-index: 2;
 `
+
 const StickyDuration = styled.div`
 bottom: calc(${props => props.theme.size.menu} + ${props => props.theme.size.size2});
 display: block;
