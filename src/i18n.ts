@@ -48,7 +48,10 @@ const resources = {
         },
       },
       nonWork: {
-        "title": "Non-Work",
+        title: "Non-Work",
+        cnc: "<0>C'n'C</0> is a YouTube channel that I started with my Christian friends for translating English choral songs into Cantonese. It's an on-going project. 🎬",
+        music: "I am a regular choral singer for my church and my University's Christian Choir. 🎶 I am also a casual guitar player. 🎸",
+        startup: "I've joined startup competitions and have a few startup attempts. Details to be added later or please ask me in person! It was probably too detailed <1>here (my old portfolio on Web Archive)</1>",
       },
       gears: {
         "title": "Gears",

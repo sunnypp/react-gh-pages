@@ -3,6 +3,7 @@ import i18n from "./i18n"
 import { defaultTheme } from "./theme/theme"
 import AboutMe from "./component/AboutMe"
 import Experience from "./component/Experience"
+import NonWork from "./component/NonWork"
 import Menu from "./component/Menu"
 import { withTranslation } from "react-i18next"
 
@@ -22,6 +23,7 @@ function App({ t }: { t: any }) {
       <Container>
         <AboutMe />
         <Experience />
+        <NonWork />
       </Container>
     </ThemeProvider>
   )
