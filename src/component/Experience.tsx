@@ -1,7 +1,7 @@
 import { Trans, withTranslation } from "react-i18next"
 import styled from "styled-components"
 import ExperiencePhoto from "../asset/photo/experience.jpg"
-import { Em, StickyTitle, Subtitle } from "./Title"
+import { Em, Small, StickyTitle, Subtitle } from "./Title"
 
 const Experience = styled.div`
 background-color: ${props => props.theme.palette.experience.background};
@@ -62,11 +62,6 @@ line-height: 1.25;
 margin: 8px 0;
 `
 
-const Small = styled.span`
-font-size: ${props => props.theme.size.size3};
-line-height: 0.5;
-`
-
 const Component = ({ t }: { t: any }) => <Experience>
   <ExperienceContainer>
     <RoleContainer>
@@ -74,7 +69,7 @@ const Component = ({ t }: { t: any }) => <Experience>
         <li>
           {t("experience.goodnotes.recommendation")}
           <NestedList>
-            <TightListItem><Trans i18nKey="experience.goodnotes.recommendations.0"><Em>Insightful grader 👁️</Em> <Small>(for take-home CRDT assignment)</Small></Trans></TightListItem>
+            <TightListItem><Trans i18nKey="experience.goodnotes.recommendations.0"><Em>Insightful grader 👁️</Em><Small>(for take-home CRDT assignment)</Small></Trans></TightListItem>
             <TightListItem><Trans i18nKey="experience.goodnotes.recommendations.1"><Em>Good story-teller 🧑🏻‍🏫</Em> <Small>(even won Best Presenter in 1st internal hackathon)</Small></Trans></TightListItem>
           </NestedList>
         </li>

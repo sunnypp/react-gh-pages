@@ -23,4 +23,9 @@ font-weight: 600;
 line-height: 2;
 `
 
-export { Em, Title, StickyTitle, Subtitle };
+const Small = styled.span`
+font-size: ${props => props.theme.size.font.small};
+line-height: 0.5;
+`
+
+export { Em, Title, StickyTitle, Subtitle, Small };
