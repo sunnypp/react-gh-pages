@@ -8,6 +8,7 @@ import { withTranslation } from "react-i18next"
 
 const Container = styled.div`
 display: flex;
+font-family: ${props => props.theme.typography.sansSerif};
 flex: 0 1 auto;
 flex-direction: column-reverse;
 overflow-x: clip;

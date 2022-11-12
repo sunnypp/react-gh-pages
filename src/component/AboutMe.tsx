@@ -30,6 +30,7 @@ transform: rotate(-10deg);
 
 const Name = styled.span`
 background: ${props => props.theme.palette.aboutMe.highlight};
+font-family: ${props => props.theme.typography.handwriting};
 font-size: ${props => props.theme.size.font.big};
 font-weight: 900;
 `
@@ -46,6 +47,7 @@ z-index: 1;
 
 const Hi = styled.span`
 color: ${props => props.theme.palette.common.secondary};
+font-family: ${props => props.theme.typography.handwriting};
 font-size: ${props => props.theme.size.menu};
 font-weight: 900;
 line-height: 2.5;

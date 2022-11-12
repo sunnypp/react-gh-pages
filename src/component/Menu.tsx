@@ -13,6 +13,7 @@ bottom: 0;
 display: flex;
 flex-direction: row;
 font-color: ${props => props.theme.palette.menu.text};
+font-family: ${props => props.theme.typography.sansSerif};
 height: ${props => props.theme.size.menu};
 position: fixed;
 width: 100%;

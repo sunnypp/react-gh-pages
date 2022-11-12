@@ -33,6 +33,10 @@ export const defaultTheme: DefaultTheme = {
       big: "24px",
     },
   },
+  typography: {
+    handwriting: "Noteworthy, Chalkboard, Freestyle Script, Verdana, Arial",
+    sansSerif:    "Verdana, Arial",
+  },
   palette: {
     common: {
       small:     defaultColors.GOLD,
