@@ -1,10 +1,12 @@
 import { DefaultTheme } from 'styled-components'
 
 const defaultColors = {
-  ORANGE:  "#ff9422",
-  YELLOW:  "#ffdf10",
+  ORANGE:  "#fb8500",
+  YELLOW:  "#ffb703",
   PINK:    "#fcccdd",
-  BLUE:    "#7788ff",
+  SKYBLUE: "#8ecae6",
+  BLUE:    "#219ebc",
+  NIGHT:   "#023047",
   WHITE:   "#fffeee",
   OVERLAY: "rgba(255, 255, 255, 0.9)",
   GOLD:    "#998866",
@@ -39,8 +41,8 @@ export const defaultTheme: DefaultTheme = {
     menu: {
       icon:       defaultColors.BLACK,
       text:       defaultColors.BLACK,
-      background: defaultColors.ORANGE,
-      hover:      defaultColors.YELLOW,
+      background: defaultColors.BLUE,
+      hover:      defaultColors.SKYBLUE,
     },
     aboutMe: {
       title:      defaultColors.BLACK,
