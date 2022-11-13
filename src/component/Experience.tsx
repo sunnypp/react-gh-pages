@@ -97,12 +97,12 @@ const Component = ({ t }: { t: any }) => <Experience>
     <HorizontalRule />
     <RoleContainer>
       <ExperienceList>
-        <li><Trans i18nKey="experience.pred.experiences.0">Hands-on Development from Scratch (&gt;5 projects, including <a href="https://www.mostown.com.hk" target="_blank">MOSTown</a>) 🗒️</Trans></li>
+        <li><Trans i18nKey="experience.pred.experiences.0">Hands-on Development from Scratch (&gt;5 projects, including <a href="https://www.mostown.com.hk" target="_blank" rel="noreferrer">MOSTown</a>) 🗒️</Trans></li>
         <li>{t("experience.pred.experiences.1")}</li>
         <li>{t("experience.pred.experiences.2")}</li>
         <li>{t("experience.pred.experiences.3")}</li>
         <NestedList>
-          <TightListItem><Small><Trans i18nKey="experience.pred.libraries">(briefly worked with <a href="https://phaser.io" target="_blank">Phaser.js</a>, <a href="https://github.com/tensorflow/tfjs" target="_blank">Tensorflow.js</a>, <a href="https://github.com/web3/web3.js" target="_blank">web3.js</a>, <a href="https://gulpjs.com" target="_blank">gulp</a>, <a href="https://reactjs.org" target="_blank">React</a>, <a href="https://greensock.com/gsap/" target="_blank">GSAP</a>, etc.)</Trans></Small></TightListItem>
+          <TightListItem><Small><Trans i18nKey="experience.pred.libraries">(briefly worked with <a href="https://phaser.io" target="_blank" rel="noreferrer">Phaser.js</a>, <a href="https://github.com/tensorflow/tfjs" target="_blank" rel="noreferrer">Tensorflow.js</a>, <a href="https://github.com/web3/web3.js" target="_blank" rel="noreferrer">web3.js</a>, <a href="https://gulpjs.com" target="_blank" rel="noreferrer">gulp</a>, <a href="https://reactjs.org" target="_blank" rel="noreferrer">React</a>, <a href="https://greensock.com/gsap/" target="_blank" rel="noreferrer">GSAP</a>, etc.)</Trans></Small></TightListItem>
         </NestedList>
       </ExperienceList>
       <StickySubtitle><Em>@{t("experience.pred.company")}</Em></StickySubtitle>
@@ -111,9 +111,9 @@ const Component = ({ t }: { t: any }) => <Experience>
     <HorizontalRule />
     <RoleContainer>
       <ExperienceList>
-        <li><Trans i18nKey="experience.neto.experiences.0"><Em>100% of Perl test cases (&gt;100 files and growing)</Em> are based on <a href="https://github.com/sunnypp/peri" target="_blank">Peri</a> which I implemented as a Perl port of <a href="https://jasmine.github.io" target="_blank">JasmineJS</a> which earned me <Em>Developer of the Month</Em></Trans></li>
+        <li><Trans i18nKey="experience.neto.experiences.0"><Em>100% of Perl test cases (&gt;100 files and growing)</Em> are based on <a href="https://github.com/sunnypp/peri" target="_blank" rel="noreferrer">Peri</a> which I implemented as a Perl port of <a href="https://jasmine.github.io" target="_blank" rel="noreferrer">JasmineJS</a> which earned me <Em>Developer of the Month</Em></Trans></li>
         <li><Trans i18nKey="experience.neto.experiences.1"><Em>Reduced 95%+ of the problem of \"overwriting staging environments\"</Em> by making a Slackbot</Trans></li>
-        <li><Trans i18nKey="experience.neto.experiences.2">IntelliJ Groovy plugin, <a href="https://stackoverflow.com/questions/42049983/bash-based-hot-reload-implementation/42080289" target="_blank">bash script</a>, Chrome plugins and more on top of daily JavaScript + Perl coding to meet new eCommerce requirements as a remote team member of an Australian company</Trans></li>
+        <li><Trans i18nKey="experience.neto.experiences.2">IntelliJ Groovy plugin, <a href="https://stackoverflow.com/questions/42049983/bash-based-hot-reload-implementation/42080289" target="_blank" rel="noreferrer">bash script</a>, Chrome plugins and more on top of daily JavaScript + Perl coding to meet new eCommerce requirements as a remote team member of an Australian company</Trans></li>
       </ExperienceList>
       <StickySubtitle><Em>@<Trans i18nKey="experience.neto.company">Neto <Small>(by Maropost)</Small></Trans></Em></StickySubtitle>
       <StickyDuration><Em>{t("experience.neto.duration")}</Em></StickyDuration>

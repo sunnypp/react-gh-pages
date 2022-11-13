@@ -24,14 +24,14 @@ width: 100%;
 const Component = ({ t }: { t: any }) => <NonWork>
   <CncBlock>
     <CncImage src={CncIcon} id="nonWork" />
-    <Trans i18nKey="nonWork.cnc"><a href="https://www.youtube.com/channel/UCl-I9ammUpPqYOTgIIj33DA" target="_blank">C'n'C</a> is a YouTube channel that I started with my Christian friends for translating English choral songs into Cantonese. It's an on-going project. 🎬</Trans>
+    <Trans i18nKey="nonWork.cnc"><a href="https://www.youtube.com/channel/UCl-I9ammUpPqYOTgIIj33DA" target="_blank" rel="noreferrer">C'n'C</a> is a YouTube channel that I started with my Christian friends for translating English choral songs into Cantonese. It's an on-going project. 🎬</Trans>
   </CncBlock>
   <br/>
   {t("nonWork.music")}
   <br/>
   <br/>
   <Small>
-    <Trans i18nKey="nonWork.startup">I've joined startup competitions and have a few startup attempts. Details to be added later or please ask me in person! It was probably too detailed <a href="https://web.archive.org/web/20201214161128/https://sunnypp.github.io/" target="_blank">here (my old portfolio on Web Archive)</a></Trans>
+    <Trans i18nKey="nonWork.startup">I've joined startup competitions and have a few startup attempts. Details to be added later or please ask me in person! It was probably too detailed <a href="https://web.archive.org/web/20201214161128/https://sunnypp.github.io/" target="_blank" rel="noreferrer">here (my old portfolio on Web Archive)</a></Trans>
   </Small>
   <StickyTitle><Em>Non-Work</Em></StickyTitle>
 </NonWork>
