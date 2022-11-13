@@ -74,7 +74,7 @@ const resources = {
           },
           {
             name: "PC Cooling Pad",
-            description: "This boosts the machine's performance. I have a story to tell about it. 😉",
+            description: "This boosts the machine's performance. I have a <1>story</1> to tell about it. 😉",
           },
         ],
         extraInfo: "I have other gears like a portable computer stand, an eGPU, and video-audio equipments like microphones, headphones, a stabilizer, etc.. I love everyone of them."

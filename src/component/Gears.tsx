@@ -20,7 +20,7 @@ const Component = ({ t }: { t: any }) => <Gears>
   <DesktopContainer>
     <Subtitle>{t("gears.lists.0.name")}</Subtitle>
     <Trans i18nKey="gears.lists.0.description">
-      Inspired by <a href="https://youtu.be/CftAs56ar48" target="_blank">this video</a>, I use such a large screen as freely-movable-and-rotatable 27-inch monitors. And I often open 6+ files using 2/3 of my screen leaving 1/3 for browsers and messaging. 📺
+      Inspired by <a href="https://youtu.be/CftAs56ar48" target="_blank" rel="noreferrer">this video</a>, I use such a large screen as freely-movable-and-rotatable 27-inch monitors. And I often open 6+ files using 2/3 of my screen leaving 1/3 for browsers and messaging. 📺
     </Trans>
     <br/><br/>
 
@@ -37,7 +37,7 @@ const Component = ({ t }: { t: any }) => <Gears>
     <br/><br/>
 
     <Subtitle>{t("gears.lists.4.name")}</Subtitle>
-    {t("gears.lists.4.description")}
+    <Trans i18nKey="gears.lists.4.description">This boosts the machine's performance. I have a <a href="https://sunnypp.medium.com/a-cooling-fan-is-cool-as-the-machine-stays-hot-a4d6ed0f64bf" target="_blank" rel="noreferrer">story</a> to tell about it. 😉</Trans>
     <br/><br/>
 
     <Small>{t("gears.extraInfo")}</Small>
