@@ -22,7 +22,7 @@ const resources = {
           ],
           recommendation: "What colleagues said: 📣",
           recommendations: [
-            "<0>Insightful grader 👁️</0> <2>(for take-home CRDT assignment)</2>",
+            "<0>Insightful grader 👁️</0> <1>(for take-home CRDT assignment)</1>",
             "<0>Good story-teller 🧑🏻‍🏫</0> <2>(even won Best Presenter in 1st internal hackathon)</2>",
           ]
         },
