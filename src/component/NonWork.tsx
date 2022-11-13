@@ -30,9 +30,11 @@ const Component = ({ t }: { t: any }) => <NonWork>
   {t("nonWork.music")}
   <br/>
   <br/>
-  <Small>
-    <Trans i18nKey="nonWork.startup">I've joined startup competitions and have a few startup attempts. Details to be added later or please ask me in person! It was probably too detailed <a href="https://web.archive.org/web/20201214161128/https://sunnypp.github.io/" target="_blank" rel="noreferrer">here (my old portfolio on Web Archive)</a></Trans>
-  </Small>
+  <div>
+    <Small>
+      <Trans i18nKey="nonWork.startup">I've joined startup competitions and have a few startup attempts. Details to be added later or please ask me in person! It was probably too detailed <a href="https://web.archive.org/web/20201214161128/https://sunnypp.github.io/" target="_blank" rel="noreferrer">here (my old portfolio on Web Archive)</a></Trans>
+    </Small>
+  </div>
   <StickyTitle><Em>Non-Work</Em></StickyTitle>
 </NonWork>
 

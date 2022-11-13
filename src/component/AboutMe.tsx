@@ -19,6 +19,10 @@ line-height: 1.5;
 padding: ${props => props.theme.size.menu} ${props => props.theme.size.size3} ${props => props.theme.size.size3};
 position: relative;
 z-index: 2;
+
+${props => props.theme.breakpoints.largerThanPhone} {
+  font-size: ${props => props.theme.size.font.big};
+}
 `
 
 const Photo = styled.img`
@@ -35,9 +39,14 @@ background: ${props => props.theme.palette.aboutMe.highlight};
 font-family: ${props => props.theme.typography.handwriting};
 font-size: ${props => props.theme.size.font.big};
 font-weight: 900;
+
+${props => props.theme.breakpoints.largerThanPhone} {
+  font-size: ${props => props.theme.size.font.bigger};
+}
 `
 
 const Greetings = styled.div`
+margin-bottom: ${props => props.theme.size.menu};
 position: relative;
 z-index: 1;
 `
@@ -49,6 +58,11 @@ font-size: ${props => props.theme.size.menu};
 font-weight: 900;
 line-height: 2.5;
 text-shadow: -3px -3px 1px #fff, 3px -3px 1px #fff, -3px 3px 1px #fff, 3px 3px 1px #fff;
+
+${props => props.theme.breakpoints.largerThanPhone} {
+  font-size: ${props => props.theme.size.font.impact};
+  text-shadow: -5px -5px 1px #fff, 5px -5px 1px #fff, -5px 5px 1px #fff, 5px 5px 1px #fff;
+}
 `
 
 const Big = styled(Em)`

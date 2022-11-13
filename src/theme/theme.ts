@@ -28,9 +28,11 @@ export const defaultTheme: DefaultTheme = {
     size6: "48px",
     menu:  "72px",
     font: {
-      small: "12px",
+      small:   "12px",
       content: "16px",
-      big: "24px",
+      big:     "24px",
+      bigger:  "36px",
+      impact:  "144px",
     },
   },
   typography: {

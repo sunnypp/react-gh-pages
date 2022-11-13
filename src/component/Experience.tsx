@@ -17,12 +17,17 @@ position: relative;
 `
 
 const StickySubtitle = styled(Subtitle)`
-left: 50vw;
 bottom: calc(${props => props.theme.size.menu} + ${props => props.theme.size.size6} + ${props => props.theme.size.size2});
 color: ${props => props.theme.palette.experience.subtitle};
 display: inline-block;
 position: sticky;
+text-align: right;
+width: 100%;
 z-index: 2;
+
+${props => props.theme.breakpoints.largerThanPhone} {
+  bottom: calc(${props => props.theme.size.menu} + ${props => props.theme.size.size3} + ${props => props.theme.size.size2});
+}
 `
 
 const StickyDuration = styled.div`
