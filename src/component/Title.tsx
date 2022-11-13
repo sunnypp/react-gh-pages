@@ -9,6 +9,10 @@ font-family: ${props => props.theme.typography.handwriting};
 font-size: ${props => props.theme.size.size6};
 margin: ${props => props.theme.size.size4} 0;
 font-weight: 600;
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  font-size: ${props => props.theme.size.menu};
+}
 `
 
 const StickyTitle = styled(Title)`
@@ -18,13 +22,21 @@ position: sticky;
 `
 
 const Subtitle = styled.div`
-font-size: ${props => props.theme.size.size4};
+font-size: ${props => props.theme.size.font.big};
 font-weight: 600;
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  font-size: ${props => props.theme.size.font.bigger};
+}
 `
 
 const Small = styled.span`
 font-size: ${props => props.theme.size.font.small};
 line-height: 0.5;
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  font-size: ${props => props.theme.size.font.content};
+}
 `
 
-export { Em, Title, StickyTitle, Subtitle, Small };
+export { Em, Title, StickyTitle, Subtitle, Small }

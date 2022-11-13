@@ -27,9 +27,11 @@ export const defaultTheme: DefaultTheme = {
     size5: "36px",
     size6: "48px",
     menu:  "72px",
+    bound: "800px",
     font: {
       small:   "12px",
       content: "16px",
+      desktop: "20px",
       big:     "24px",
       bigger:  "36px",
       impact:  "144px",

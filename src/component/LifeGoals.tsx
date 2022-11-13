@@ -1,5 +1,6 @@
 import { withTranslation } from "react-i18next"
 import styled from "styled-components"
+import { DesktopContainer } from "./DesktopContainer"
 import { StickyTitle } from "./Title"
 
 const LifeGoals = styled.div`
@@ -19,17 +20,23 @@ text-align: center;
 const Goal = styled.div`
 font-size: ${props => props.theme.size.font.big};
 margin-bottom: ${props => props.theme.size.size3};
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  font-size: ${props => props.theme.size.font.bigger};
+}
 `
 
 const Component = ({ t }: { t: any }) => <LifeGoals id="lifeGoals">
-  {t("lifeGoals.abstract")}<br/>
-  <Goals>
-    <Goal>{t("lifeGoals.lists.0")}</Goal>
-    <Goal>{t("lifeGoals.lists.1")}</Goal>
-    <Goal>{t("lifeGoals.lists.2")}</Goal>
-    <Goal>{t("lifeGoals.lists.3")}</Goal>
-    <Goal>{t("lifeGoals.lists.4")}</Goal>
-  </Goals>
+  <DesktopContainer>
+    {t("lifeGoals.abstract")}<br/>
+    <Goals>
+      <Goal>{t("lifeGoals.lists.0")}</Goal>
+      <Goal>{t("lifeGoals.lists.1")}</Goal>
+      <Goal>{t("lifeGoals.lists.2")}</Goal>
+      <Goal>{t("lifeGoals.lists.3")}</Goal>
+      <Goal>{t("lifeGoals.lists.4")}</Goal>
+    </Goals>
+  </DesktopContainer>
   <StickyTitle>{t("lifeGoals.title")}</StickyTitle>
 </LifeGoals>
 

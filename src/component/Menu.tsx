@@ -7,18 +7,24 @@ import styled from 'styled-components'
 import { withTranslation } from 'react-i18next'
 
 const Menu = styled.nav`
-align-items: center;
 background: ${props => props.theme.palette.menu.background};
 border-top: 4px dashed #fff;
 bottom: 0;
-display: flex;
-flex-direction: row;
-font-color: ${props => props.theme.palette.menu.text};
-font-family: ${props => props.theme.typography.sansSerif};
 height: ${props => props.theme.size.menu};
 position: fixed;
 width: 100%;
 z-index: 9999;
+`
+
+const MenuContainer = styled.div`
+align-items: center;
+display: flex;
+flex-direction: row;
+font-color: ${props => props.theme.palette.menu.text};
+font-family: ${props => props.theme.typography.sansSerif};
+max-width: ${props => props.theme.size.bound};
+margin: auto;
+width: 100%;
 `
 
 const IconButton = styled.a`
@@ -58,11 +64,13 @@ const MenuButton = (key: string, t: any) => <IconButton href={`#${key}`}>
 </IconButton>
 
 const Component = ({ t }: { t: any }) => <Menu>
-  {MenuButton("aboutMe", t)}
-  {MenuButton("experience", t)}
-  {MenuButton("nonWork", t)}
-  {MenuButton("gears", t)}
-  {MenuButton("lifeGoals", t)}
+  <MenuContainer>
+    {MenuButton("aboutMe", t)}
+    {MenuButton("experience", t)}
+    {MenuButton("nonWork", t)}
+    {MenuButton("gears", t)}
+    {MenuButton("lifeGoals", t)}
+  </MenuContainer>
 </Menu>
 
 export default withTranslation()(Component)

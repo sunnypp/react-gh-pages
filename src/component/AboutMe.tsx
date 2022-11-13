@@ -23,6 +23,10 @@ z-index: 2;
 ${props => props.theme.breakpoints.largerThanPhone} {
   font-size: ${props => props.theme.size.font.big};
 }
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  text-align: center;
+}
 `
 
 const Photo = styled.img`
@@ -31,6 +35,7 @@ position: absolute;
 right: -20px;
 top: -50px;
 transform: rotate(-10deg);
+max-width: 300px;
 width: 45%;
 `
 

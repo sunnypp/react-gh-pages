@@ -14,6 +14,10 @@ line-height: 1.5;
 /* as 100% is the image width, taking aspect ratio into account */
 padding: 0 ${props => props.theme.size.size3} 40vw;
 position: relative;
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  font-size: ${props => props.theme.size.font.desktop};
+}
 `
 
 const StickySubtitle = styled(Subtitle)`
@@ -28,6 +32,10 @@ z-index: 2;
 ${props => props.theme.breakpoints.largerThanPhone} {
   bottom: calc(${props => props.theme.size.menu} + ${props => props.theme.size.size3} + ${props => props.theme.size.size2});
 }
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  bottom: calc(${props => props.theme.size.menu} + ${props => props.theme.size.size4} + ${props => props.theme.size.size2});
+}
 `
 
 const StickyDuration = styled.div`
@@ -37,6 +45,10 @@ font-size: ${props => props.theme.size.font.small};
 position: sticky;
 text-align: right;
 z-index: 3;
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  font-size: ${props => props.theme.size.font.content};
+}
 `
 
 const ExperienceContainer = styled.div`
@@ -56,7 +68,9 @@ width: 100%;
 `
 
 const ExperienceList = styled.ul`
-margin: 0;
+margin: 0 auto;
+max-width: ${props => props.theme.size.bound};
+width: 100%;
 `
 
 const NestedList = styled.ul`
