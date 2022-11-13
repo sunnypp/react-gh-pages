@@ -4,7 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Enhancements (This is an aggregated list, to be done in the future)
 
-- Upward scrolling from the start
 - Responsive for desktop
 - Cooling Pad story
 - Gears photo
