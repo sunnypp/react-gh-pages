@@ -62,11 +62,11 @@ font-family: ${props => props.theme.typography.handwriting};
 font-size: ${props => props.theme.size.menu};
 font-weight: 900;
 line-height: 2.5;
-text-shadow: -3px -3px 1px #fff, 3px -3px 1px #fff, -3px 3px 1px #fff, 3px 3px 1px #fff;
+text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff;
 
 ${props => props.theme.breakpoints.largerThanPhone} {
   font-size: ${props => props.theme.size.font.impact};
-  text-shadow: -5px -5px 1px #fff, 5px -5px 1px #fff, -5px 5px 1px #fff, 5px 5px 1px #fff;
+  text-shadow: -5px -5px 0 #fff, 5px -5px 0 #fff, -5px 5px 0 #fff, 5px 5px 0 #fff;
 }
 `
 
