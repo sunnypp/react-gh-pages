@@ -32,9 +32,8 @@ ${props => props.theme.breakpoints.largerThanTablet} {
 const Photo = styled.img`
 filter: drop-shadow(-6px -6px 1px #fff);
 position: absolute;
-right: -20px;
-top: -50px;
-transform: rotate(-10deg);
+right: 0;
+top: -100px;
 max-width: 300px;
 width: 45%;
 `

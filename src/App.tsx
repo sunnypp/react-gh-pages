@@ -11,10 +11,6 @@ import { useEffect, useRef } from "react"
 import toast, { Toaster } from "react-hot-toast"
 
 const GlobalStyle = createGlobalStyle`
-html, body {
-  overflow-x: hidden;
-}
-
 body {
   background: ${(defaultTheme as any).palette.common.bright};
 }
