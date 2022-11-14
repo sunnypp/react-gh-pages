@@ -5,7 +5,7 @@ import Experience from "./component/Experience"
 import NonWork from "./component/NonWork"
 import Gears from "./component/Gears"
 import Menu from "./component/Menu"
-import { withTranslation } from "react-i18next"
+import { Trans, withTranslation } from "react-i18next"
 import LifeGoals from "./component/LifeGoals"
 import { useEffect, useRef } from "react"
 import toast, { Toaster } from "react-hot-toast"
@@ -13,6 +13,10 @@ import toast, { Toaster } from "react-hot-toast"
 const GlobalStyle = createGlobalStyle`
 html, body {
   overflow-x: hidden;
+}
+
+body {
+  background: ${(defaultTheme as any).palette.common.bright};
 }
 `
 
@@ -22,6 +26,22 @@ font-family: ${props => props.theme.typography.sansSerif};
 flex: 0 1 auto;
 flex-direction: column-reverse;
 padding-bottom: ${props => props.theme.size.menu};
+`
+
+const HiddenBehind = styled.div`
+bottom: calc(${props => props.theme.size.menu} + ${props => props.theme.size.size3});
+color: ${props => props.theme.palette.common.hidden};
+font-family: ${props => props.theme.typography.sansSerif};
+font-size: ${props => props.theme.size.font.content};
+left: 50%;
+position: fixed;
+text-align: center;
+transform: translateX(-50%);
+z-index: -1;
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  font-size: ${props => props.theme.size.font.big};
+}
 `
 
 function App({ t }: { t: any }) {
@@ -48,6 +68,7 @@ function App({ t }: { t: any }) {
 
     toast(t("message.goUp"), {
       id: "message.goUp",
+      position: "top-center",
       icon: "⬆️",
       style: {
         fontFamily: (defaultTheme as any).typography.sansSerif,
@@ -58,6 +79,7 @@ function App({ t }: { t: any }) {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
+      <Toaster />
       <Menu />
       <Container>
         <AboutMe />
@@ -66,7 +88,7 @@ function App({ t }: { t: any }) {
         <Gears />
         <LifeGoals />
       </Container>
-      <Toaster />
+      <HiddenBehind><Trans i18nKey="hiddenGoUpHint">Please scroll <b>UP</b> to read more! ⬆️ Thanks 😘</Trans></HiddenBehind>
     </ThemeProvider>
   )
 }

@@ -45,6 +45,8 @@ export const defaultTheme: DefaultTheme = {
     common: {
       small:     defaultColors.GOLD,
       secondary: defaultColors.GREY,
+      bright:    defaultColors.YELLOW,
+      hidden:    defaultColors.NIGHT,
     },
     menu: {
       icon:       defaultColors.BLACK,
