@@ -1,4 +1,4 @@
-import styled, { ThemeProvider } from "styled-components"
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 import { defaultTheme } from "./theme/theme"
 import AboutMe from "./component/AboutMe"
 import Experience from "./component/Experience"
@@ -9,12 +9,17 @@ import { withTranslation } from "react-i18next"
 import LifeGoals from "./component/LifeGoals"
 import { useEffect, useRef } from "react"
 
+const GlobalStyle = createGlobalStyle`
+html, body {
+  overflow-x: hidden;
+}
+`
+
 const Container = styled.div`
 display: flex;
 font-family: ${props => props.theme.typography.sansSerif};
 flex: 0 1 auto;
 flex-direction: column-reverse;
-overflow-x: clip;
 padding-bottom: ${props => props.theme.size.menu};
 `
 
@@ -43,6 +48,7 @@ function App() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
       <Menu />
       <Container>
         <AboutMe />
