@@ -70,7 +70,6 @@ width: 100%;
 const ExperienceList = styled.ul`
 margin: 0 auto;
 max-width: ${props => props.theme.size.bound};
-width: 100%;
 `
 
 const NestedList = styled.ul`
