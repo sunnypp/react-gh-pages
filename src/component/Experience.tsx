@@ -1,11 +1,12 @@
 import { Trans, withTranslation } from "react-i18next"
 import styled from "styled-components"
-import ExperiencePhoto from "../asset/photo/experience.jpg"
+import Experience360p from "../asset/photo/experience360p.webp"
+import Experience720p from "../asset/photo/experience720p.webp"
 import { Em, Small, StickyTitle, Subtitle } from "./Title"
 
 const Experience = styled.div`
 background-color: ${props => props.theme.palette.experience.background};
-background-image: url(${ExperiencePhoto});
+background-image: url(${Experience360p});
 background-position-y: bottom;
 background-repeat: no-repeat;
 background-size: 100%;
@@ -16,6 +17,7 @@ padding: 0 ${props => props.theme.size.size3} 40vw;
 position: relative;
 
 ${props => props.theme.breakpoints.largerThanTablet} {
+  background-image: url(${Experience720p});
   font-size: ${props => props.theme.size.font.desktop};
 }
 `

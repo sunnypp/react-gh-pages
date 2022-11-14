@@ -5,7 +5,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Enhancements (This is an aggregated list, to be done in the future)
 
 - Gears photo
-- Video backgrounds
 - Chinese translations
 - Modify menu to use circular buttons with arrows
 - Arrow on UI for scroll direction hint

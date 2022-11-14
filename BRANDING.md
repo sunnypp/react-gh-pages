@@ -70,3 +70,13 @@ Reference: [Orange + Honey Yellow + Prussian Blue Color Palette](https://venngag
 
 - No judgment: Sharing, instead of comparing
 - Curious: Excited, details-oriented
+
+---
+
+# Help / Credits
+
+mp4 to webp
+https://gist.github.com/witmin/1edf926c2886d5c8d9b264d70baf7379
+
+
+---
