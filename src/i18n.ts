@@ -89,7 +89,10 @@ const resources = {
           "Empower others 💪🏻",
           "Make Cantonese Christian Choral Music 🎵",
         ]
-      }
+      },
+      message: {
+        goUp: "Let's go UP!",
+      },
     }
   },
   zh: {

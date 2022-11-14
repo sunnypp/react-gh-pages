@@ -8,6 +8,7 @@ import Menu from "./component/Menu"
 import { withTranslation } from "react-i18next"
 import LifeGoals from "./component/LifeGoals"
 import { useEffect, useRef } from "react"
+import toast, { Toaster } from "react-hot-toast"
 
 const GlobalStyle = createGlobalStyle`
 html, body {
@@ -23,7 +24,7 @@ flex-direction: column-reverse;
 padding-bottom: ${props => props.theme.size.menu};
 `
 
-function App() {
+function App({ t }: { t: any }) {
   const scrolledRef = useRef(false)
   const { hash } = window.location
 
@@ -44,7 +45,15 @@ function App() {
         scrolledRef.current = true
       }
     }
-  }, [hash])
+
+    toast(t("message.goUp"), {
+      id: "message.goUp",
+      icon: "⬆️",
+      style: {
+        fontFamily: (defaultTheme as any).typography.sansSerif,
+      },
+    })
+  }, [hash, t])
 
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -57,6 +66,7 @@ function App() {
         <Gears />
         <LifeGoals />
       </Container>
+      <Toaster />
     </ThemeProvider>
   )
 }
