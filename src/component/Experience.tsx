@@ -131,8 +131,8 @@ const Component = ({ t }: { t: any }) => <Experience>
     <HorizontalRule />
     <RoleContainer>
       <ExperienceList>
-        <li><Trans i18nKey="experience.neto.experiences.0"><Em>100% of Perl test cases (&gt;100 files and growing)</Em> are based on <a href="https://github.com/sunnypp/peri" target="_blank" rel="noreferrer">Peri</a> which I implemented as a Perl port of <a href="https://jasmine.github.io" target="_blank" rel="noreferrer">JasmineJS</a> which earned me <Em>Developer of the Month</Em></Trans></li>
-        <li><Trans i18nKey="experience.neto.experiences.1"><Em>Reduced 95%+ of the problem of \"overwriting staging environments\"</Em> by making a Slackbot</Trans></li>
+        <li><Trans i18nKey="experience.neto.experiences.0">Enabled Automated Unit / Integration Testing of Perl codebase by porting <Em>JasmineJS</Em> to Perl (open-sourced as <a href="https://github.com/sunnypp/peri" target="_blank" rel="noreferrer">Peri</a>, earned me <Em>Developer of the Month</Em> 🏛️</Trans></li>
+        <li><Trans i18nKey="experience.neto.experiences.1"><Em>Solved the issue of "overwriting staging environments"</Em>, by providing a Server Vacancy Management solution with a Slackbot 🤖</Trans></li>
         <li><Trans i18nKey="experience.neto.experiences.2">IntelliJ Groovy plugin, <a href="https://stackoverflow.com/questions/42049983/bash-based-hot-reload-implementation/42080289" target="_blank" rel="noreferrer">bash script</a>, Chrome plugins and more on top of daily JavaScript + Perl coding to meet new eCommerce requirements as a remote team member of an Australian company</Trans></li>
       </ExperienceList>
       <StickySubtitle><Em>@<Trans i18nKey="experience.neto.company">Neto <Small>(by Maropost)</Small></Trans></Em></StickySubtitle>
