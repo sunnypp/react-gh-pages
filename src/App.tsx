@@ -2,7 +2,7 @@ import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 import { defaultTheme } from "./theme/theme"
 import AboutMe from "./component/AboutMe"
 import Experience from "./component/Experience"
-import NonWork from "./component/NonWork"
+import Passion from "./component/Passion"
 import Gears from "./component/Gears"
 import Menu from "./component/Menu"
 import { Trans, withTranslation } from "react-i18next"
@@ -80,7 +80,7 @@ function App({ t }: { t: any }) {
       <Container>
         <AboutMe />
         <Experience />
-        <NonWork />
+        <Passion />
         <Gears />
         <LifeGoals />
       </Container>

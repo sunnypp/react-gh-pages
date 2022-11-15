@@ -1,6 +1,6 @@
 import AboutMeIcon from '../asset/icon/aboutMe.svg'
 import ExperienceIcon from '../asset/icon/experience.svg'
-import NonWorkIcon from '../asset/icon/nonWork.svg'
+import PassionIcon from '../asset/icon/passion.svg'
 import GearsIcon from '../asset/icon/gears.svg'
 import LifeGoalsIcon from '../asset/icon/lifeGoals.svg'
 import styled from 'styled-components'
@@ -53,7 +53,7 @@ width: ${props => props.theme.size.size6};
 const Icons: Record<string, string> = {
   aboutMe: AboutMeIcon,
   experience: ExperienceIcon,
-  nonWork: NonWorkIcon,
+  passion: PassionIcon,
   gears: GearsIcon,
   lifeGoals: LifeGoalsIcon,
 }
@@ -67,7 +67,7 @@ const Component = ({ t }: { t: any }) => <Menu>
   <MenuContainer>
     {MenuButton("aboutMe", t)}
     {MenuButton("experience", t)}
-    {MenuButton("nonWork", t)}
+    {MenuButton("passion", t)}
     {MenuButton("gears", t)}
     {MenuButton("lifeGoals", t)}
   </MenuContainer>

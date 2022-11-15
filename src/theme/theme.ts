@@ -72,7 +72,7 @@ export const defaultTheme: DefaultTheme = {
       highlight:  defaultColors.OVERLAY,
       separator:  defaultColors.BLUE,
     },
-    nonWork: {
+    passion: {
       title:      defaultColors.BLACK,
       background: defaultColors.YELLOW,
       content:    defaultColors.BLACK,

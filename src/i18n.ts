@@ -47,11 +47,19 @@ const resources = {
           ],
         },
       },
-      nonWork: {
-        title: "Non-Work",
+      passion: {
+        title: "Passion",
         cnc: "<0>C'n'C</0> is a YouTube channel that I started with my Christian friends for translating English choral songs into Cantonese. It's an on-going project. 🎬",
         music: "I am a regular choral singer for my church and my University's Christian Choir. 🎶 I am also a casual guitar player. 🎸",
         startup: "I've joined startup competitions and have a few startup attempts. Details to be added later or please ask me in person! It was probably too detailed <1>here (my old portfolio on Web Archive)</1>",
+        knowledge: {
+          title: "Knowledge",
+          description: `There is an urge inside me to care about how knowledge can be passed into future generations, after I have watched this amazing talk which outlined some of the lost technologies in human history: <1>Preventing the Collapse of Civilisations by Jonathan Blow</1><br/><br/>Along the same path, I investigated about <5>Zettelkasten</5> and other ways of organizing knowledge (e.g. <7>Personal Knowledge Management</7> to start with). I was using <9>vim-wiki</9> before I use any outliners (e.g. Workflowy, Dynalist, Logseq). The idea of everything being connected as a graph is also interesting to me: <11>GraphOS</11>`,
+        },
+        sync: {
+          title: "Synchronization / Collaboration in 2 Extremes",
+          description: "Offline-first: I am heavily intrigued by the mathematical beauty of <1>Conflict-free Replicated Data Type</1> (CRDT). Imagine a world where people can collaborate while they are offline (and sync later) and data modification requires no one to wait for server response.<br/><br/>Real-time: I enjoy making music with others online using <6>Jamulus</6>. Once I tried jamming with people from Guangdong, Malaysia, Taiwan, Thailand at the same time. I hope this technology to be promoted and adapted in other sync-related application, like conference calls, VR / AR.",
+        }
       },
       gears: {
         title: "Gears",
