@@ -41,8 +41,8 @@ const resources = {
           company: "Neto <1>(by Maropost)</1>",
           duration: "Aug '15 - Jan '18",
           experiences: [
-            "Enabled Automated Unit / Integration Testing of Perl codebase by porting <1>JasmineJS</1> to Perl (open-sourced as <3>Peri</3>, earned me <5>Developer of the Month</5> 🏛️",
-            `<0>Solved the issue of "overwriting staging environments"</0>, by providing a Server Vacancy Management solution with a Slackbot 🤖`,
+            `Pioneered <1>Peri</1> (ported <3>JasmineJS</3>, an Automated Testing Framework to Perl), which is used in production. Earned me <5>Developer of the Month</5> 🏛️`,
+            `Reduced <1>95% of the "overwriting staging environments" deployment issue</1> by launching a Slackbot 🤖`,
             "IntelliJ Groovy plugin, <1>bash script</1>, Chrome plugins and more on top of daily JavaScript + Perl coding to meet new eCommerce requirements as a remote team member of an Australian company",
           ],
         },
