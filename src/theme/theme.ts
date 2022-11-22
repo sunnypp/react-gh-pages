@@ -16,6 +16,7 @@ const defaultColors = {
 
 export const defaultTheme: DefaultTheme = {
   breakpoints: {
+    largerThanSE:     "@media only screen and (min-width: 360px)",
     largerThanPhone:  "@media only screen and (min-width: 481px)",
     largerThanTablet: "@media only screen and (min-width: 769px)",
   },
@@ -34,7 +35,7 @@ export const defaultTheme: DefaultTheme = {
       desktop: "20px",
       big:     "24px",
       bigger:  "36px",
-      impact:  "144px",
+      impact:  "88px",
     },
   },
   typography: {

@@ -14,18 +14,25 @@ animation: ${gradient} 8s ease infinite;
 background: ${props => props.theme.palette.aboutMe.background};
 background-size: 500% 500%;
 font-size: ${props => props.theme.size.font.content};
-min-height: 55vh;
+height: 80vh;
 line-height: 1.5;
-padding: ${props => props.theme.size.menu} ${props => props.theme.size.size3} ${props => props.theme.size.size3};
+padding: 0 ${props => props.theme.size.size3} ${props => props.theme.size.size3};
 position: relative;
 z-index: 2;
 
+${props => props.theme.breakpoints.largerThanSE} {
+  height: 60vh;
+}
+
 ${props => props.theme.breakpoints.largerThanPhone} {
   font-size: ${props => props.theme.size.font.big};
+  /* includes landscape phone screen which the scroll up hint should be visible */
+  height: unset;
 }
 
 ${props => props.theme.breakpoints.largerThanTablet} {
   text-align: center;
+  height: 75vh;
 }
 `
 
@@ -36,6 +43,14 @@ right: 0;
 top: -100px;
 max-width: 300px;
 width: 45%;
+
+${props => props.theme.breakpoints.largerThanPhone} {
+  width: 35%;
+}
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  width: 30%;
+}
 `
 
 const Name = styled.span`
@@ -50,9 +65,17 @@ ${props => props.theme.breakpoints.largerThanPhone} {
 `
 
 const Greetings = styled.div`
-margin-bottom: ${props => props.theme.size.menu};
 position: relative;
 z-index: 1;
+
+${props => props.theme.breakpoints.largerThanPhone} {
+  padding-bottom: ${props => props.theme.size.menu};
+}
+
+${props => props.theme.breakpoints.largerThanTablet} {
+  top: 50%;
+  transform: translateY(-50%);
+}
 `
 
 const Hi = styled.span`
