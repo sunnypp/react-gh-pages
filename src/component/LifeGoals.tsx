@@ -10,6 +10,7 @@ font-size: ${props => props.theme.size.font.content};
 line-height: 1.5;
 padding: ${props => props.theme.size.menu} ${props => props.theme.size.size3} ${props => props.theme.size.size3};
 position: relative;
+text-shadow: 0 0 10px ${props => props.theme.palette.lifeGoals.background};
 `
 
 const Goals = styled.div`
