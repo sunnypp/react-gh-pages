@@ -99,7 +99,7 @@ font-size: ${props => props.theme.size.font.big};
 const Component = ({ t }: { t: any }) => <AboutMe>
   <Photo src={sunnyToastPhoto}></Photo>
   <Greetings>
-    <Trans i18nKey="aboutMe.greetings"><Hi id="aboutMe">hi! 👋🏻</Hi><br/>I'm <Name>Sunny Pun ☀️</Name>, a <Big>Passionate Programmer 🔥</Big> who also cares about <Big>Design 🎨 & Product 💁🏻‍♂️</Big>, for <Big>next generations 👦🏻🧒🏼👧🏾</Big>.</Trans>
+    <Trans i18nKey="aboutMe.greetings"><Hi>hi! 👋🏻</Hi><br/>I'm <Name id="aboutMe">Sunny Pun ☀️</Name>, a <Big>Passionate Programmer 🔥</Big> who also cares about <Big>Design 🎨 & Product 💁🏻‍♂️</Big>, for <Big>next generations 👦🏻🧒🏼👧🏾</Big>.</Trans>
   </Greetings>
 </AboutMe>
 
