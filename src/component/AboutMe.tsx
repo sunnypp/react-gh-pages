@@ -92,14 +92,36 @@ ${props => props.theme.breakpoints.largerThanPhone} {
 }
 `
 
+interface LanguageButtonProps {
+  selected: boolean
+}
+
+const LanguageButton = styled.button<LanguageButtonProps>`
+background: ${props => props.selected ? props.theme.palette.aboutMe.hi : props.theme.palette.common.bright};
+border: ${props => props.selected ? props.theme.size.size1 : 0};
+border-color: ${props => props.theme.palette.aboutMe.highlight};
+border-radius: 9999px;
+border-style: solid;
+color: ${props => props.selected ? props.theme.palette.aboutMe.highlight : "#000"};
+font-size: ${props => props.theme.size.font.content};
+font-weight: ${props => props.selected ? 800 : 400};
+margin: ${props => props.theme.size.size3};
+padding: ${props => props.theme.size.size3};
+`
+
 const Big = styled(Em)`
 font-size: ${props => props.theme.size.font.big};
 `
 
-const Component = ({ t }: { t: any }) => <AboutMe>
+const Component = ({ i18n }: { i18n: any }) => <AboutMe>
   <Photo src={sunnyToastPhoto}></Photo>
   <Greetings>
     <Trans i18nKey="aboutMe.greetings"><Hi>hi! 👋🏻</Hi><br/>I'm <Name id="aboutMe">Sunny Pun ☀️</Name>, a <Big>Passionate Programmer 🔥</Big> who also cares about <Big>Design 🎨 & Product 💁🏻‍♂️</Big>, for <Big>next generations 👦🏻🧒🏼👧🏾</Big>.</Trans>
+    <br/>
+    <br/>
+    <LanguageButton selected={i18n.language === "en"} onClick={() => i18n.changeLanguage("en")}>EN</LanguageButton>
+    <LanguageButton selected={i18n.language === "zh-CN"} onClick={() => i18n.changeLanguage("zh-CN")}>简</LanguageButton>
+    <LanguageButton selected={i18n.language === "zh-TW"} onClick={() => i18n.changeLanguage("zh-TW")}>繁</LanguageButton>
   </Greetings>
 </AboutMe>
 

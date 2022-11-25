@@ -84,7 +84,7 @@ function App({ t }: { t: any }) {
         <Gears />
         <LifeGoals />
       </Container>
-      <HiddenBehind><Trans i18nKey="hiddenGoUpHint">Please scroll <b>UP</b> to read more! ⬆️ Thanks 😘</Trans></HiddenBehind>
+      <HiddenBehind><Trans i18nKey="message.hiddenGoUpHint">Please go <b>UP</b> to read more! ⬆️ Thanks 😘</Trans></HiddenBehind>
     </ThemeProvider>
   )
 }

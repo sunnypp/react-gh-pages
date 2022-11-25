@@ -39,7 +39,7 @@ export const defaultTheme: DefaultTheme = {
     },
   },
   typography: {
-    handwriting: "Noteworthy, Chalkboard, Freestyle Script, Verdana, Arial",
+    handwriting: "Noteworthy, Chalkboard, Freestyle Script, Hiragino Maru Gothic ProN, Verdana, Arial, Arial Unicode MS",
     sansSerif:    "Verdana, Arial",
   },
   palette: {
